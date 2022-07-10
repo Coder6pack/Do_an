@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang Chủ</title>
     <script></script>
-   <script>
+    <!-- <script>
       var i = 0;
       var images = [];
       var time = 1000;
@@ -27,7 +27,7 @@
       }
 
       window.onload = changeImg;
-    </script>
+    </script> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -49,51 +49,60 @@
         </div>
       </section>
     </header>
-    <main>
-      <section id="section1" style="width: 55%; float: left">
-        <aside>
-          <div style="display:flex;">
-            <img name="slide" id="intro1" src="" alt="Anh intro" />
+    <main class="main">
+      <section class="content">
+        <div class="section1">
+          <div>
+            <img
+              name="slide"
+              id="intro1"
+              src="img/images1.png"
+              alt="Anh intro"
+              style="width: 70%"
+            />
           </div>
           <div>
-            <video id="video" controls>
+            <video id="video" style="width: 70%" controls>
               <source
                 src="media/y2mate.com - Thông Tin Tuyển Sinh 2022  Trường Cao Đẳng Kỹ Thuật Cao Thắng_480p.mp4"
               />
             </video>
           </div>
           <div>
-           <a href=""> <img
-            class="dangky"
-            src="img/Dangkyxettuyen.png"
-            alt="dang ky xet tuyen 1"
-          /></a>
+            <a href="">
+              <img
+                class="dangky"
+                src="img/Dangkyxettuyen.png"
+                alt="dang ky xet tuyen 1"
+            /></a>
           </div>
           <div>
-            <a href=""><img
-              class="dangky"
-              src="img/dangkyxettuyen2.png"
-              alt="ang ky xet tuyen 2"
+            <a href=""
+              ><img
+                class="dangky"
+                src="img/dangkyxettuyen2.png"
+                alt="ang ky xet tuyen 2"
             /></a>
           </div>
           <div>
             <a href="">
               <img
-              class="dangky"
-              src="img/dangkyxettuyen3.png"
-              alt="dang ky xet tuyen 3"
-            />
+                class="dangky"
+                src="img/dangkyxettuyen3.png"
+                alt="dang ky xet tuyen 3"
+              />
             </a>
           </div>
           <div>
-            <a href=""><img
-              class="dangky"
-              src="img/dangkyxettuyen4.png"
-              alt="ang ky xet tuyen 4"
+            <a href=""
+              ><img
+                class="dangky"
+                src="img/dangkyxettuyen4.png"
+                alt="ang ky xet tuyen 4"
             /></a>
           </div>
-          <div id="divtscha">
-            <div id="divtscon">
+          <div class="divtscha">
+            <div class="divtscon">
               <h3 class="menu">Tuyển Sinh</h3>
               <ul>
                 <li class="tuyensinh1">
@@ -107,15 +116,15 @@
                 </li>
                 <li class="tuyensinh1">
                   <a href=""
-                    >Hướng dẫn đăng ký xét tuyển các ngành  nghề sử dụng kết quả tốt
-                    nghiệp của kỳ thi THPT quốc gia năm 2022
+                    >Hướng dẫn đăng ký xét tuyển các ngành nghề sử dụng kết quả
+                    tốt nghiệp của kỳ thi THPT quốc gia năm 2022
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div id="divelcha">
-            <div id="divelcon">
+          <div class="divelcha">
+            <div class="divelcon">
               <h3 class="menu">E-Learning</h3>
               <ul>
                 <li class="tuyensinh2">
@@ -141,7 +150,7 @@
               </ul>
             </div>
           </div>
-          <div id="divpkcha">
+          <div class="divpkcha">
             <div id="divpkcon">
               <h3 class="menu">Tin tức từ Phòng-Khoa</h3>
               <ul>
@@ -171,10 +180,8 @@
               </ul>
             </div>
           </div>
-        </aside>
-      </section>
-      <section id="section2" style="width: 45%; float: right">
-        <aside>
+        </div>
+        <div class="section2">
           <div id="divnewcha">
             <div id="divnewcon">
               <h3 class="menu">Tin mới nhất</h3>
@@ -196,71 +203,9 @@
               </ul>
             </div>
           </div>
-          <div>
-            <img id="ksvl" src="img/ksvl.png" alt="Khao sát việc làm" />
-          </div>
-          <div>
-            <video id="video2" controls>
-              <source
-                src="media/y2mate.com - Bạn đã sẵn sàng gia nhập cộng đồng Cao Thắng_480p.mp4"
-              />
-            </video>
-          </div>
-          <div>
-            <iframe
-              id="iframe"
-              src="https://www.facebook.com/caothang.edu.vn/"
-              frameborder="0"
-            ></iframe>
-          </div>
-          <div id="mapcha">
-            <div id="mapcon">
-              <h3 class="menu">Địa chỉ</h3>
-              <img
-                style="width: 100%"
-                src="img/map.png"
-                alt="Bản đồ cao thắng"
-              />
-            </div>
-          </div>
-          <div id="messcha">
-            <div id="messcon">
-              <h3 class="menu">Lượt truy cập</h3>
-              <p class="titile1">Hôm nay:</p>
-              <p class="titile">12345</p>
-              <br />
-              <p class="titile1">Tuần này:</p>
-              <p class="titile">54321</p>
-              <br />
-              <p class="titile1">Tháng này:</p>
-              <p class="titile2">56789</p>
-            </div>
-          </div>
-        </aside>
-      </section>
-      <section">
-      <div id="logocha">
-        <div id="logocon">
-          <a class="logo" href=""><img src="img/1.png" alt="logo1"></a>
-          <a href="" class="logo"><img  src="img/2.png" alt="logo2"></a>
-          <a href="" class="logo"><img  src="img/3.png" alt="logo3"></a>
-          <a href="" class="logo"><img  src="img/4.png" alt="logo4"></a>
-          <a href="" class="logo"><img  src="img/5.png" alt="logo5"></a>
-          <a href="" class="logo"><img  src="img/6.jpg" alt="logo6"></a>
-          <a href="" class="logo"><img  src="img/7.png" alt="logo7"></a>
-          <a href="" class="logo"><img  src="img/8.png" alt="logo8"></a>
-          <a href="" class="logo"><img  src="img/9.png" alt="logo9"></a>
         </div>
-      </div>
-    </section>
-    </main>
-    <footer>
-      <section style="width:45%; border: solid;display: inline-flex;">
-        <aside>
-          <p>Địa chỉ: 65 Huỳnh Thúc Kháng,P.Bến Nghé,Q1,Tp.HCM</p>
-          <p>Tel:028 38 212 868</p>
-        </aside>
       </section>
-    </footer>
+    </main>
+    <footer class="footer"></footer>
   </body>
 </html>

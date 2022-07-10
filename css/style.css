@@ -3,215 +3,30 @@
    box-sizing: border-box;
 }
 
-.section1{
-
-}
-
-#intro1{
-   width: 48%;
-   transform: translate(100%,0px);
+.main{
+   padding-left : 25%;
+   padding-right: 25%;
 }
 
 .dangky{
-   width: 48%;
-   transform: translate(100%,0px);
+   width: 70%;
 }
 
-#video{
-   width: 48%;
-   transform: translate(100%,0px);
-}
-
-.tuyensinh1{
-   margin-left: 5%;
-   margin-bottom: 10px;
-}
-
-.tuyensinh2{
-   margin-left: 5%;
-   margin-bottom: 10px;
-}
-
-.tuyensinh3{
-   margin-left: 5%;
-   margin-bottom: 10px;
-} 
-
-h3{
-   margin-left: 4%;
-   margin-bottom: 10px;
-   margin-top: 10px;
-}
-
-#divtscha{
-   position: relative;
-}
-
-#divtscon{
-   border: solid;
-   position:absolute;
-   top: 50%;
-   left: 48%;
-}
-
-#divelcha{
-   position: relative;
-}
-
-#divelcon{
-   transform: translate(0px,144px);
-   border: solid;
-   position:absolute;
-   top: 50%;
-   left: 48%;
-}
-
-#divpkcha{
-   position: relative;
-}
-
-#divpkcon{
-   transform: translate(0px,315px);
-   border: solid;
-   position:absolute;
-   top: 50%;
-   left: 48%;
-}
-
-.menu{
-   color: aliceblue;
-   margin: 0;
-   margin-bottom: 10px;
-   background-color:blue;
-}
-
-#divnewcha{
-   position: relative;
-}
-#divnewcon{
-   transform: translate(-600px,0px);
-   border: solid;
-   position:absolute;
-   top: 50%;
-   left: 48%;
-}
-
-.new{
-   margin-bottom: 10px;
-   margin-top: 5px;
-}
-
-#video2{
-   width: 52%;
-   transform: translate(0,208px);
-}
-
-#ksvl{
-   width: 40%;
-   transform: translate(0,203px);
+.divtscha{
+   width: 70%;
    border: solid;
 }
 
-#iframe{
-   transform: translate(0,230px);
-}
-
-#iframe2{
-   transform: translate(0,250px);
-}
-
-#mapcha{
-   position: relative;
-}
-#mapcon{
+.divelcha{
+   width: 70%;
    border: solid;
-   position:absolute;
-   width: 51%;
-   transform: translate(0,255px);
 }
 
-#messcha{
-   position: relative;
-}
-#messcon{
+.divpkcha{
+   width: 70%;
    border: solid;
-   position:absolute;
-   width: 53%;
-   transform: translate(0,780px);
 }
 
-.titile1{
-   display: inline;
-   margin-left: 44px;
-margin-top: 10px;
-}
-
-.titile{
-   display: inline;
-   margin-left: 96px;
-}
-.titile2{
-   display: inline;
-   margin-left: 87px;
-}
-
-#logocha{
-   position: relative;
-}
-#logocon{
-   display: inline;
-   border: solid;
-   position:absolute;
-   width: 53%;
-   transform: translate(0,2000px);
-   top: 50%;
-   left: 18%;
-}
-
-.logo{
-   margin-left: 45px;
-}
-
-#header{
-   width: 100%;
-}
-
-#khoa{
-   border: solid;
-   margin-bottom: 15px;
-   background-color: aquamarine;
-}
-
-.khoacon{
-   padding: 0px;
-   margin-left:0px;
-}
-
-#khoacon1{
-   font-size: 15px;
-   margin-left: 150px;
-}
-
-#khoacon2{
-   font-size: 15px;
-   margin-left: 250px;
-}
-
-#khoacon3{
-   font-size: 15px;
-   margin-left: 350px;
-}
-#khoacon4{
-   font-size: 15px;
-   margin-left: 450px;
-}
-
-#khoacon5{
-   font-size: 15px;
-   margin-left: 550px;
-}
-
-#khoacon6{
-   font-size: 15px;
-   margin-left: 650px;
+.content{
+   display: flex;
 }
