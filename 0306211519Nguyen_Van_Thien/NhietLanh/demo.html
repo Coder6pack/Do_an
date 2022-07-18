@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Nhiệt-Lạnh CĐ Kỹ Thuật Cao Thắng</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .f2{
+                color: #fff !important;
+                text-align: center !important;
+                margin: 0 !important;
+            }
+            .f1{
+                box-sizing: border-box;
+                display: block;
+                background-color: #343a40 !important;
+                padding-bottom: 1.5rem !important;
+                padding-top: 1.5rem !important;
+            }
+            .head{
+                background-color: white !important;
+                box-sizing: border-box;
+                display: block;
+                padding-top: 0.25rem !important;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .row{
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+            a{
+                color: white ;
+                text-decoration: none;
+                background-color: transparent;
+            }
+            .a1{
+                color: #0099ee;
+                text-decoration: none;
+                background-color: transparent;
+            }
+            .a2{
+                color:black;
+            }
+            .video{
+                color: #fff;
+                background-color: #0099ee;
+            }
+            iframe{
+                width: 100%;
+                height: 200px;
+                border-top-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 0px;
+                border-left-width: 0px;
+                border-style: inset;
+                border-color: initial;
+                border-image: initial;
+            }
+            .v4{
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+                width: 100%;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .v8{
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%;
+                width: 100%;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .col-lg-12{
+                width: 100%;
+            }
+            .v8-1{
+                height:10.7cm;
+            }
+            .menu-item{
+                display: inline-block;
+                text-align: center;
+                margin: 0px;
+                position: relative;
+            }
+            #menu{
+                text-align: center;
+                display: block;
+                padding:0;
+                margin:0;
+                background-color: rgb(38, 120, 243);                       
+            }
+            #list-menu{
+                margin: 0%;
+            }
+            .item{
+                display: inline-block;
+                padding: 22px;
+                position: relative; 
+            }
+            #list-none-1,#list-none-2,#list-none-3,#list-none-4,#list-none-5,#list-none-6,#list-none-7,#list-none-8{
+                position: absolute;
+                text-decoration: none;
+                margin: 0;
+                padding: 0%;
+                text-align: left;
+                list-style:none;
+                background-color: rgb(226, 226, 226);
+                color: black;
+                }
+            #list-none-1{
+                width: 150%;
+                display:none;
+            }
+            #list-none-2{
+                width: 150%;
+                display: none;
+            }
+            #list-none-3{
+                width: 150%;
+                display: none;
+            }
+            #list-none-4{
+                width: 150%;
+                display: none;
+            }
+            #list-none-5{
+                width: 150%;
+                display: none;
+            }
+            #list-none-6{
+                width: 150%;
+                display: none;
+            }
+            #list-none-7{
+                width: 150%;
+                display: none;
+            }
+            #list-none-8{
+                width: 150%;
+                display: none;
+            }
+            .li1,.li2,.li3{
+                padding: 15px;
+                margin: 0;
+                list-style: none;
+                font-size: 16px;
+                color:white;
+            }
+            li.li1:hover{
+                background-color: grey;
+            }
+            .li-head1{
+                padding-bottom: 10px;
+            }
+            .item-none-1{
+                padding:0;
+            }
+            .item-none-7{
+                padding:0;
+            }
+            .menu-link{
+                color: black;
+            }
+            .ul-li{
+                padding: 0;
+            }
+            .col-lg-6,.col-6{
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+                position: relative;
+                width: 100%;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px
+            }
+            .bg-light {
+                background-color: #e9ecef !important;
+            }
+            .text-primary {
+                color: #0099ee !important;
+            }
+            small, .small {
+            font-size: 80%;
+            font-weight: 400;
+            color:black;
+            }
+            .col-10 {
+            flex: 0 0 83.333333%;
+            max-width: 83.333333%;
+            }
+            .col-lg-3{
+                flex: 0 0 25%;
+                position: relative;
+                width: 100%;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+                text-align: center;
+            }
+            .mp{
+                float:right;
+            }
+            body{
+                
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: blue;
+                text-align: left;
+            }
+            .mb-4, .my-4 {
+                margin-bottom: 1.5rem !important;
+            }
+            .my-4{
+                margin-top: 1.5rem !important;
+            }
+            .carousel {
+                position: relative;
+            }
+            .card {
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: rgba(255, 255, 255, 0);
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, 0.125);
+                border-radius: 0.25rem;
+            }
+            .card-header:first-child {
+                border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+            }
+            .bg-primary {
+                background-color: #0099ee !important;
+            }
+            .card-header {
+                padding: 0.5rem 0.25rem;
+                margin-bottom: 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+            }
+            .card-title {
+                margin-bottom: 0;
+            }
+            h4, .h4 {
+                margin-top: 0;
+                font-size: 1.25rem;
+                font-family: inherit;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+            .text-white {
+                color: #fff !important;
+            }
+            .fa {
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+            }
+            .card-body {
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                padding: 1.25rem;
+            }
+            .pl-1, .px-1 {
+                padding-left: 0.25rem !important;
+            }
+            ul {
+                margin-top: 0;
+                margin-bottom: 1rem;
+                display: block;
+                list-style-type: disc;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                padding-inline-start: 40px;
+            }
+            .text-justify {
+                text-align: justify !important;
+            }
+            .mb-2, .my-2 {
+                margin-bottom: 0.5rem !important;
+            }
+            .border-left-0 {
+                border-left: 0 !important;
+            }
+            .border-right-0 {
+                border-right: 0 !important;
+            }
+            .border-top-0 {
+                border-top: 0 !important;
+            }
+            .border {
+                border: 1px solid #e9ecef !important;
+            }
+            li {
+                display: list-item;
+            }
+            .mb-1, .my-1 {
+                margin-bottom: 0.25rem !important;
+            }
+            .img-thumbnail {
+                background-color: white;
+                border: 1px solid #ddd;
+                max-width: 100%;
+                padding: 10px;
+                height:150px;
+                width: 200px;
+            }
+            img {
+                vertical-align: middle;
+            }
+            .col-5,.col-7{
+                padding: 5px;
+            }
+            .text-left{
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <div class="head">
+            <div class="row">
+                <div class="logo">
+                    <a href="."><img alt="logo" src="logo.png"></a>
+                </div>
+                <div>
+                  <img alt="TRƯỜNG CĐ KỸ THUẬT CAO THẮNG&lt;br/&gt;KHOA CÔNG NGHỆ NHIỆT - LẠNH" src="banner.png">
+                </div>
+            </div>
+        </div>
+
+        <div id="menu">
+            <ul id="list-menu">
+                <li class="menu-item" id="item-1" onmouseenter="light('item-1','sub-1')" onmouseleave="normal('item-1','sub-1')">
+                    <a href="https://nhietlanh.caothang.edu.vn/4-Gioi-thieu-Khoa-Cong-nghe-Nhiet---Lanh-1486361267.html" class="item">GIỚI THIỆU</a>
+                </li>
+                <li class="menu-item" id="item-2"  onmouseenter="light('item-2','sub-2','list-none-1')" onmouseleave="normal('item-2','sub-2','list-none-1')">
+                    <a href="#" class="item">SINH VIÊN<br> <i id="sub-2"></i></a>
+                    <ul id="list-none-1">
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Tin-tuc-SV-8" class="menu-link  sub-menu-link">Tin Tức SV</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Tai-lieu-hoc-tap-13" class="menu-link  sub-menu-link">Tài Liệu Học Tập</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Doan-Thanh-Nien-12" class="menu-link  sub-menu-link">Đoàn Thanh Niên</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/De-Thi---Dap-An-11" class="menu-link  sub-menu-link">Đề Thi - Đáp Án</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Bieu-Mau-Sinh-Vien-10" class="menu-link  sub-menu-link">Biểu Mẫu</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Hoc-bong-SV-20" class="menu-link  sub-menu-link">Học Bổng</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item" id="item-3"  onmouseenter="light('item-3','sub-3','list-none-2')" onmouseleave="normal('item-3','sub-3','list-none-2')">
+                    <a href="#" class="item">GIẢNG VIÊN<br> <i id="sub-3"></i></a>
+                    <ul id="list-none-2">
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Thong-Bao-GV-15" class="menu-link  sub-menu-link">Thông Báo</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/4-Doi-ngu-giang-vien-1486106569.html" class="menu-link  sub-menu-link">Đội Ngũ Giảng Viên</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Lich-Giang-16" class="menu-link  sub-menu-link">Lịch Giảng</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Bieu-Mau-17" class="menu-link  sub-menu-link">Biểu Mẫu</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item" id="item-4"  onmouseenter="light('item-4','sub-4','list-none-3')" onmouseleave="normal('item-4','sub-4','list-none-3')">
+                    <a href="#" class="item">ĐÀO TẠO<br> <i id="sub-4"></i></a>
+                    <ul id="list-none-3">
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/5-Chuyen-nganh-dao-tao-1581528385.html" class="menu-link  sub-menu-link">Chuyên Ngành Đào Tạo</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Co-so-vat-chat-26" class="menu-link  sub-menu-link">Cơ Sở Vật Chất</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Dao-tao-ngan-han-21" class="menu-link  sub-menu-link">Đào Tạo Ngắn Hạn</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item" id="item-5"  onmouseenter="light('item-5','sub-5','list-none-4')" onmouseleave="normal('item-5','sub-5','list-none-4')">   
+                    <a href="#" class="item">NCKH<br> <i id="sub-5"></i></a>
+                </li>
+                <li class="menu-item" id="item-6"  onmouseenter="light('item-6','sub-6','list-none-5')" onmouseleave="normal('item-6','sub-6','list-none-5')">
+                    <a href="#" class="item">KIỂM ĐỊNH ABET<br> <i id="sub-6"></i></a>
+                    <ul id="list-none-5">
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/2-Gioi-thieu-ABET-1581529064.html" class="menu-link  sub-menu-link">Giới Thiệu ABET</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/2-Muc-tieu-chuong-trinh-va-chuan-dau-ra-1581529116.html" class="menu-link  sub-menu-link">Mục Tiêu Đào Tạo Và Chuẩn Đầu Ra</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/2-Ban-co-van-1581529129.html" class="menu-link  sub-menu-link">Ban Cố Vấn</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Hoat-Dong-ABET-22" class="menu-link  sub-menu-link">Các Hoạt Động ABET</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item" id="item-7"  onmouseenter="light('item-7','sub-7','list-none-6')" onmouseleave="normal('item-7','sub-7','list-none-6')">
+                    <a href="#" class="item">TUYỂN DỤNG<br> <i id="sub-7"></i></a>
+                </li>
+                <li class="menu-item" id="item-8"  onmouseenter="light('item-8','sub-8','list-none-7')" onmouseleave="normal('item-8','sub-8','list-none-7')">
+                    <a href="#" class="item">E-LEARNING <br> <i id="sub-8"></i></a>
+                    <ul id="list-none-7">
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Huong-dan-su-dung-25" class="menu-link  sub-menu-link">Hướng Dẫn Sử Dụng</a></li>
+                        <li class="li1"><a href="https://nhietlanh.caothang.edu.vn/Lich-giang-day-24" class="menu-link  sub-menu-link">Lịch Giảng Dạy</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item" id="item-9"  onmouseenter="light('item-9','sub-9','list-none-8')" onmouseleave="normal('item-9','sub-9','list-none-8')">
+                    <a href="#" class="item">LIÊN HỆ<br> <i id="sub-9"></i></a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+
+     
+<div class="container">
+    <div class="row">
+
+            
+        <div class="col-lg-12 ">          
+            <div class="card my-4">  
+                <div class="card-header bg-primary">
+                    <h4 class="card-title text-white">Video</h4>
+                </div>  
+                <div class="card-body  row">      
+                    <div class="v8">
+                        <iframe class="v8-1" src="https://www.youtube.com/embed/kkDq3RTPEfQ" frameborder="0" allowfullscreen=""></iframe>   
+                    </div>
+                    <div class="v4">   
+                        <iframe  src="https://www.youtube.com/embed/f2IrA8K4D8Q" frameborder="0" allowfullscreen=""></iframe>
+                        <iframe  src="https://www.youtube.com/embed/Ag2FJCPFdKo" frameborder="0" allowfullscreen=""></iframe>        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div><div class="row">
+            <div class="col-lg-6  mb-4">
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h4 class="card-title text-primary"><i class="fa "></i>  Sinh Viên</h4>
+                    </div>
+                    <div class="card-body row">       
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Các công ty Tuyển dụng sinh viên ngành/ nghề thuộc khoa công nghệ nhiệt Lạnh " style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="tin-tuc-sv/Tuyen-dung-thang-062022.html">Các công ty Tuyển dụng sinh viên ngành/ nghề thuộc khoa công nghệ nhiệt Lạnh </a> - <span class="small">13.06.2022</span>
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Danh sách đề tài và GV hướng dẫn đồ án tốt nghiệp CĐNL19ABC" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="tin-tuc-sv/Danh-sach-de-tai-va-GV-huong-dan-do-an-tot-nghiep-CDNL19ABC.html">Danh sách đề tài và GV hướng dẫn đồ án tốt nghiệp CĐNL19ABC</a> - <span class="small">31.05.2022</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Danh sách Sinh Viên nhận học bổng của Quỹ học bổng doanh nghiệp - cựu sinh viên Nhiệt Lạnh Cao Thắng " style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="hoc-bong-sv/Danh-sach-Sinh-Vien-Nhan-hoc-bong-cua-Quy-hoc-bong-doanh-nghiep---cuu-sinh-vien-Nhiet-Lanh-Cao-Thang-.html">Danh sách Sinh Viên nhận học bổng của Quỹ học bổng doanh nghiệp - cựu sinh viên Nhiệt Lạnh Cao Thắng </a> - <span class="small">19.04.2022</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image khai giảng lớp Liên thông Đại Học Bách khoa TPHCM học tại trường CĐ KT Cao Thắng " style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="tin-tuc-sv/khai-giang-lop-Lien-thong-Dai-Hoc-Bach-khoa-TPHCM-hoc-tai-truong-CD-KT-Cao-Thang-.html">khai giảng lớp Liên thông Đại Học Bách khoa TPHCM học tại trường CĐ KT Cao Thắng </a> - <span class="small">10.03.2022</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Thi lại tuần 26 năm 2022" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="tin-tuc-sv/Thi-lai-tuan-26-nam-2022.html">Thi lại tuần 26 năm 2022</a> - <span class="small">23.02.2022</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Thi lại Tuần 25 " style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="tin-tuc-sv/Thi-lai-Tuan-25-.html">Thi lại Tuần 25 </a> - <span class="small">18.02.2022</span> 
+                        </div>
+                        <div class="col-12 text-right small"><a class ="a1" href="https://nhietlanh.caothang.edu.vn/sinh-vien-9"><i class="fa fa-external-link-square"></i>  Xem thêm ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-lg-6  mb-4">
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h4 class="card-title text-primary"><i class="fa "></i>  Kiểm Định ABET</h4>
+                    </div>
+                    <div class="card-body row">       
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Hội thảo lấy ý kiến doanh nghiệp về cơ sở vật chất và chương trình đào tạo ngành công nghệ kỹ thuật nhiệt năm 2021 - 2022" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="hoat-dong-ABET/HOI-THAO-LAY-Y-KIEN-DOANH-NGHIEP-VE-CO-SO-VAT-CHAT-VA-CHUONG-TRINH-DAO-TAO-NGANH-CONG-NGHE-KY-THUAT-NHIET-NAM-2021---2022.html">Hội thảo lấy ý kiến doanh nghiệp về cơ sở vật chất và chương trình đào tạo ngành công nghệ kỹ thuật nhiệt năm 2021 - 2022</a> - <span class="small">27.04.2022</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Tham quan thực tế công ty viễn thông FPT telecom" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="hoat-dong-ABET/Tham-quan-thuc-te-cong-ty-vien-thong-FPT-telecom.html">Tham quan thực tế công ty viễn thông FPT telecom</a> - <span class="small">27.04.2022</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Hội thảo lấy ý kiến doanh nghiệp về cơ sở vật chất và chương trình đào tạo ngành công nghệ kỹ thuật nhiệt năm 2020 - 2021" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="hoat-dong-ABET/hoi-thao-lay-y-kien-doanh-nghiep-ve-co-so-vat-chat-va-chuong-trinh-dao-tao-nganh-cong-nghe-ky-thuat-nhiet-nam-2020---2021.html">Hội thảo lấy ý kiến doanh nghiệp về cơ sở vật chất và chương trình đào tạo ngành công nghệ kỹ thuật nhiệt năm 2020 - 2021</a> - <span class="small">19.12.2020</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Lễ ký kết  thỏa thuận hợp tác  giữa Khoa công nghệ Nhiệt -Lạnh&nbsp;- Trường Cao đẳng Kỹ thuật Cao Thắng và Công Công Ty TNHH Cơ Điện Lạnh Nhất Tâm " style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="hoat-dong-ABET/Le-ky-ket--thoa-thuan-hop-tac--giua-Khoa-cong-nghe-Nhiet--Lanh.html">Lễ ký kết  thỏa thuận hợp tác  giữa Khoa công nghệ Nhiệt -Lạnh&nbsp;- Trường Cao đẳng Kỹ thuật Cao Thắng và Công Công Ty TNHH Cơ Điện Lạnh Nhất Tâm </a> - <span class="small">20.07.2020</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Lễ ký kết  thỏa thuận hợp tác  giữa Khoa công nghệ Nhiệt -Lạnh&nbsp;- Trường Cao đẳng Kỹ thuật Cao Thắng và Công ty TMDV May" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="hoat-dong-ABET/Le-ky-ket-thoa-thuan-hop-tac.html">Lễ ký kết  thỏa thuận hợp tác  giữa Khoa công nghệ Nhiệt -Lạnh&nbsp;- Trường Cao đẳng Kỹ thuật Cao Thắng và Công ty TMDV May</a> - <span class="small">09.07.2020</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Lễ ký kết  thỏa thuận hợp tác  giữa Khoa công nghệ Nhiệt -Lạnh&nbsp;- Trường Cao đẳng Kỹ thuật Cao Thắng và Công ty TNHH Điện Lạnh Tiến Lộc Tài " style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="hoat-dong-ABET/LCT-1592439396.html">Lễ ký kết  thỏa thuận hợp tác  giữa Khoa công nghệ Nhiệt -Lạnh&nbsp;- Trường Cao đẳng Kỹ thuật Cao Thắng và Công ty TNHH Điện Lạnh Tiến Lộc Tài </a> - <span class="small">18.06.2020</span> 
+                        </div>
+                        <div class="col-12 text-right small">
+                            <a class ="a1" href="https://nhietlanh.caothang.edu.vn/kiem-dinh-ABET-2"><i class="fa fa-external-link-square"></i>  Xem thêm ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-lg-6  mb-4">
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h4 class="card-title text-primary"><i class="fa "></i>  Giảng Viên</h4>
+                    </div>
+                    <div class="card-body row">       
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Lịch Công Tác Tuần Thứ 42 Từ Ngày 13/6/2022 Đến Ngày 19/6/2022" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="thong-bao-gv/Lich-Cong-Tac-Tuan-Thu-42-Tu-Ngay-1362022-Den-Ngay-1962022.html">Lịch Công Tác Tuần Thứ 42 Từ Ngày 13/6/2022 Đến Ngày 19/6/2022</a> - <span class="small">11.06.2022</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Lịch Công Tác Tuần Thứ 41 Từ Ngày 06/6/2022 Đến Ngày 12/6/2022" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="thong-bao-gv/Lich-Cong-Tac-Tuan-Thu-41-Tu-Ngay-0662022-Den-Ngay-1262022.html">Lịch Công Tác Tuần Thứ 41 Từ Ngày 06/6/2022 Đến Ngày 12/6/2022</a> - <span class="small">06.06.2022</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Lịch Công Tác Tuần Thứ 29 Từ Ngày 14/3/2022 Đến Ngày 20/3/2022" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="thong-bao-gv/Lich-Cong-Tac-Tuan-Thu-29-Tu-Ngay-1432022-Den-Ngay-2032022.html">Lịch Công Tác Tuần Thứ 29 Từ Ngày 14/3/2022 Đến Ngày 20/3/2022</a> - <span class="small">14.03.2022</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Lịch Công Tác Tuần Thứ 25 (Từ Ngày 14/02/2022 Đến Ngày 20/02/2022)" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="thong-bao-gv/Lich-Cong-Tac-Tuan-Thu-25-Tu-Ngay-14022022-Den-Ngay-20022022.html">Lịch Công Tác Tuần Thứ 25 (Từ Ngày 14/02/2022 Đến Ngày 20/02/2022)</a> - <span class="small">15.02.2022</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Lịch Công Tác Tuần Thứ 37 (Từ Ngày 10/5/2021 Đến Ngày 16/5/2021)" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="thong-bao-gv/Lich-Cong-Tac-Tuan-Thu-37-Tu-Ngay-1052021-Den-Ngay-1652021.html">Lịch Công Tác Tuần Thứ 37 (Từ Ngày 10/5/2021 Đến Ngày 16/5/2021)</a> - <span class="small">10.05.2021</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Lịch Công Tác Tuần Thứ 35 (Từ Ngày 26/4/2021 Đến Ngày 02/5/2021)" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="thong-bao-gv/Lich-Cong-Tac-Tuan-Thu-35-Tu-Ngay-2642021-Den-Ngay-0252021.html">Lịch Công Tác Tuần Thứ 35 (Từ Ngày 26/4/2021 Đến Ngày 02/5/2021)</a> - <span class="small">26.04.2021</span> 
+                        </div>
+                        <div class="col-12 text-right small"><a class ="a1" href="https://nhietlanh.caothang.edu.vn/giang-vien-14"><i class="fa fa-external-link-square"></i>  Xem thêm ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-lg-6  mb-4">
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h4 class="card-title text-primary"><i class="fa "></i>  Tuyển dụng</h4>
+                    </div>
+                    <div class="card-body row">       
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Tuyển dụng tháng 07" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="tuyen-dung/Tuyen-dung-thang-07.html">Tuyển dụng tháng 07</a> - <span class="small">12.07.2021</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image TUYỂN DỤNG THÁNG 04" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="tuyen-dung/TUYEN-DUNG-THANG-04.html">TUYỂN DỤNG THÁNG 04</a> - <span class="small">29.04.2021</span> 
+                        </div>
+                        <div class="col-2 ">
+                            <img src="logo.png" alt="image Thông Báo Tuyển Dụng Nhân Sự Công Ty Cổ Phần Thông Gió Công Nghiệp Breeze" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="tuyen-dung/THONG-BAO-TUYEN-DUNG-NHAN-SU-CONG-TY-CO-PHAN-THONG-GIO-CONG-NGHIEP-BREEZE-.html">Thông Báo Tuyển Dụng Nhân Sự Công Ty Cổ Phần Thông Gió Công Nghiệp Breeze</a> - <span class="small">14.04.2021</span> 
+                        </div>
+                         <div class="col-2 ">
+                            <img src="logo.png" alt="image Tuyển dụng công ty cổ phần cơ điện Hợp Phát " style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="tuyen-dung/Tuyen-dung-cong-ty-co-phan-co-dien-Hop-Phat--1617671273.html">Tuyển dụng công ty cổ phần cơ điện Hợp Phát </a> - <span class="small">06.04.2021</span> 
+                        </div>
+                         <div class="col-2 ">
+                            <img src="logo.png" alt="image Tuyển dụng 05/04/2021 TUYỂN DỤNG NHÂN VIÊN PTI VÀ SỬA CHỮA CONTAINER" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="tuyen-dung/Tuyen-dung-05042021-TUYEN-DUNG-NHAN-VIEN-PTI-VA-SUA-CHUA-CONTAINER.html">Tuyển dụng 05/04/2021 TUYỂN DỤNG NHÂN VIÊN PTI VÀ SỬA CHỮA CONTAINER</a> - <span class="small">05.04.2021</span> 
+                        </div>
+                         <div class="col-2 ">
+                            <img src="logo.png" alt="image Tuyển Dụng công ty Searrefico TPHCM" style="width:100%; max-height:80px">
+                        </div>
+                        <div class="col-10 border border-top-0 border-left-0 border-right-0 mb-2">
+                            <a class ="a1" href="tuyen-dung/Tuyen-Dung-cong-ty-Searrefico-TPHCM.html">Tuyển Dụng công ty Searrefico TPHCM</a> - <span class="small">31.03.2021</span> 
+                        </div>
+                        <div class="col-12 text-right small">
+                            <a class ="a1" href="https://nhietlanh.caothang.edu.vn/tuyen-dung-7"><i class="fa De-Thi---Dap-An-11 fa-external-link-square"></i>  Xem thêm ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    
+
+
+
+        <div class="col-lg-3">
+            <div class="card mb-4">
+                <div class="card-header bg-primary">
+                    <h4 class="card-title text-white"><i class="fa "></i> TIÊU ĐIỂM</h4>
+                </div>
+                <div class="card-body">  
+                    <ul class="pl-1">
+                        <li class="text-left text-justify border border-top-0 border-left-0 border-right-0 mb-2"><a class="a1" href="https://nhietlanh.caothang.edu.vn/hoat-dong-ABET/Lam-viec-voi-Ban-co-van-chuong-trinh-va-chuan-dau-ra.html">Làm việc với Ban cố vấn chương trình và chuẩn đầu ra</a></li>
+                        <li class="text-left text-justify border border-top-0 border-left-0 border-right-0 mb-2"><a class="a1" href="https://nhietlanh.caothang.edu.vn/kiem-dinh-ABET/Muc-tieu-chuong-trinh-va-chuan-dau-ra.html">Mục tiêu chương trình và chuẩn đầu ra</a></li>
+                        <li class="text-left text-justify border border-top-0 border-left-0 border-right-0 mb-2"><a class="a1" href="https://nhietlanh.caothang.edu.vn/gioi-thieu/doi-ngu-giang-vien-khoa-NL.html">Đội ngũ giảng viên khoa công nghệ Nhiệt Lạnh</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card my-4">
+                <div class="card-header bg-primary">
+                    <h4 class="card-title text-white"><i class="fa "></i> TIN MỚI</h4>
+                </div>
+                <div class="card-body">  
+                    <ul class="pl-1">
+                        <li class="text-left border border-top-0 border-left-0 border-right-0 mb-2"><a class="a1" href="https://nhietlanh.caothang.edu.vn/tin-tuc-sv/Tuyen-dung-thang-062022.html">Các công ty Tuyển dụng sinh viên ngành/ nghề thuộc khoa công nghệ nhiệt Lạnh </a></li>      
+                        <li class="text-left border border-top-0 border-left-0 border-right-0 mb-2"><a class="a1" href="https://nhietlanh.caothang.edu.vn/thong-bao-gv/Lich-Cong-Tac-Tuan-Thu-42-Tu-Ngay-1362022-Den-Ngay-1962022.html">Lịch Công Tác Tuần Thứ 42 Từ Ngày 13/6/2022 Đến Ngày 19/6/2022</a></li>      
+                        <li class="text-left border border-top-0 border-left-0 border-right-0 mb-2"><a class="a1" href="https://nhietlanh.caothang.edu.vn/thong-bao-gv/Lich-Cong-Tac-Tuan-Thu-41-Tu-Ngay-0662022-Den-Ngay-1262022.html">Lịch Công Tác Tuần Thứ 41 Từ Ngày 06/6/2022 Đến Ngày 12/6/2022</a></li>      
+                        <li class="text-left border border-top-0 border-left-0 border-right-0 mb-2"><a class="a1" href="https://nhietlanh.caothang.edu.vn/tin-tuc-sv/Danh-sach-de-tai-va-GV-huong-dan-do-an-tot-nghiep-CDNL19ABC.html">Danh sách đề tài và GV hướng dẫn đồ án tốt nghiệp CĐNL19ABC</a></li>      
+                        <li class="text-left border border-top-0 border-left-0 border-right-0 mb-2"><a class="a1" href="https://nhietlanh.caothang.edu.vn/hoat-dong-ABET/HOI-THAO-LAY-Y-KIEN-DOANH-NGHIEP-VE-CO-SO-VAT-CHAT-VA-CHUONG-TRINH-DAO-TAO-NGANH-CONG-NGHE-KY-THUAT-NHIET-NAM-2021---2022.html">Hội thảo lấy ý kiến doanh nghiệp về cơ sở vật chất và chương trình đào tạo ngành công nghệ kỹ thuật nhiệt năm 2021 - 2022</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="card my-4">
+                <div class="card-header bg-primary">
+                    <h4 class="card-title text-white"><i class="fa "></i> LIÊN KẾT</h4></div>
+                    <div class="card-body  row">
+                        <div class="col-6">
+                            <a href="http://www.nhattamme.com/" target=""><img class="img img-thumbnail mb-1" src="10_NTC.png" alt="công ty NTC " width="100%"></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="http://dienmaytienloctai.com.vn/" target=""><img class="img img-thumbnail mb-1" src="10_tienloctai03.jpg" alt="Tiến Lộc Tài " width="100%"></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="http://gree.com.vn/" target=""><img class="img img-thumbnail mb-1" src="10_greepn.png" alt="Cong ty Gree" width="100%"></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="http://www.chp.com.vn/" target="_bank"><img class="img img-thumbnail mb-1" src="1581445197_2.jpg" alt="Châu hiệp phát" width="100%"></a>
+                        </div>		
+                        <div class="col-6">
+                            <a href="http://koolman.vn/" target="_bank"><img class="img img-thumbnail mb-1" src="1581445187_1.jpg" alt="koolman" width="100%"></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="http://thanhtuan.com.vn/" target="_bank"><img class="img img-thumbnail mb-1" src="10_3.jpg" alt="Thanh Tuấn" width="100%"></a>
+                        </div>		
+                        <div class="col-6">
+                            <a href="http://kynguyenco.com/" target="_bank"><img class="img img-thumbnail mb-1" src="10_4.jpg" alt="kynguyenco" width="100%"></a>
+                        </div>		
+                        <div class="col-6">
+                            <a href="http://www.bme.com.vn/" target="_bank"><img class="img img-thumbnail mb-1" src="10_5.jpg" alt="BME" width="100%"></a>
+                        </div>		
+                        <div class="col-6">
+                            <a href="https://www.lg.com/" target="_bank"><img class="img img-thumbnail mb-1" src="10_6.jpg" alt="LG" width="100%"></a>
+                        </div>		
+                        <div class="col-6">
+                            <a href="http://www.rapidvietnam.com/" target="_bank"><img class="img img-thumbnail mb-1" src="10_7.jpg" alt="rapidvietnam" width="100%"></a>
+                        </div>		
+                        <div class="col-6">
+                            <a href="https://www.daikin.com.vn/" target="_bank"><img class="img img-thumbnail mb-1" src="10_8.jpg" alt="daikin" width="100%"></a>
+                        </div>		
+                        <div class="col-6">
+                            <a href="https://www.facebook.com/Vistaree.com.vn/" target="_bank"><img class="img img-thumbnail mb-1" src="10_9.jpg" alt="Vistaree" width="100%"></a>
+                        </div>		
+                        <div class="col-6">
+                            <a href="https://searefico.com/" target="_bank"><img class="img img-thumbnail mb-1" src="10_10.jpg" alt="searefico" width="100%"></a>
+                        </div>		
+                        <div class="col-6">
+                            <a href="http://www.hungtri.com/" target="_bank"><img class="img img-thumbnail mb-1" src="10_11.jpg" alt="Hưng Trí" width="100%"></a>
+                        </div>		
+                        <div class="col-6">
+                            <a href="http://30-4corp.com.vn/" target="_bank"><img class="img img-thumbnail mb-1" src="10_12.jpg" alt="30-4corp" width="100%"></a>
+                        </div>	
+                    </div>
+                </div>      
+                <div class="card my-4"> 
+                    <div >
+                        <div class="fb-page " data-href="https://www.facebook.com/103677284630721" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=102103753864681&amp;container_width=253&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2F103677284630721&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"><span style="vertical-align: bottom; width: 253px; height: 130px;"><iframe name="f108b48526676b8" width="1000px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.11/plugins/page.php?adapt_container_width=true&amp;app_id=102103753864681&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfc1cc9309684a4%26domain%3Dnhietlanh.caothang.edu.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fnhietlanh.caothang.edu.vn%252Ff35a4a6e134271c%26relation%3Dparent.parent&amp;container_width=253&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2F103677284630721&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false" style="border: none; visibility: visible; width: 253px; height: 130px;" ></iframe>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-4">
+                    <div class="card-header bg-primary">
+                        <h4 class="card-title text-white"><i class="fa "></i> LƯỢT TRUY CẬP</h4>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <div class="col-7 a2"><i class="fa  "></i> Online:</div>
+                            <div class="col-5 a2 text-right">2</div>
+                            <div class="col-7 a2"><i class="fa  "></i> Hôm nay:</div>
+                            <div class="col-5 a2 text-right">179</div>
+                            <div class="col-7 a2"><i class="fa  "></i> Tháng này:</div>
+                            <div class="col-5 a2 text-right">2.162</div>			
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+       
+
+        <footer class="f1">
+            <div>
+                <p class="f2">Trường CĐ Kỹ Thuật Cao Thắng - Khoa Công Nghệ Nhiệt - Lạnh</p>
+                <p class="f2">Địa chỉ: (Nhà F) 65 Huỳnh Thúc Kháng, Q.1, Tp.HCM</p>
+                <p class="f2">Điện thoại: 0283 821 2360 - Email: </p>
+                <p class="f2">Copyright © 2020  https://nhietlanh.caothang.edu.vn</p>
+            </div>
+        </footer>
+        <script src="demo.js"></script>
+    </body>
+</html>

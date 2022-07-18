@@ -5,29 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang Chủ</title>
-    <script></script>
-    <!-- <script>
-      var i = 0;
-      var images = [];
-      var time = 1000;
-
-      images[0] = "images1.png";
-      images[1] = "images2.png";
-      images[2] = "images3.png";
-
-      function changeImg() {
-        document.slide.src = images[i];
-
-        if (i < images.length - 1) {
-          i++;
-        } else {
-          i = 0;
-        }
-        setTimeout("changeImg()", time);
-      }
-
-      window.onload = changeImg;
-    </script> -->
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -40,11 +18,12 @@
       <section>
         <div id="khoa">
           <nav>
-            <a id="khoacon1" href="">Trang Chủ</a>
-            <a id="khoacon2" href="">Khoa Công Nghệ-Thông Tin</a>
-            <a id="khoacon3" href="">Khoa Điện-Điện Tử</a>
-            <a id="khoacon4" href="">Khoa Nhiệt</a>
-            <a id="khoacon6" href="">Khoa Cơ Khí</a>
+            <a class="nav" href="">Trang Chủ</a>
+            <a class="nav" href="Cao_Hoang_Phuc_Khoa_CNTT/PageCNTT-CKC/index.html" target="_blank">Khoa Công Nghệ-Thông Tin</a>
+            <a class="nav" href="The_Huy_Khoa_Dien_Dien_Tu/html/index.html" target="_blank">Khoa Điện-Điện Tử</a>
+            <a class="nav" href="Nguyen_Van_Thien_Khoa_Nhiet/NhietLanh/demo.html" target="_blank">Khoa Nhiệt</a>
+            <a class="nav" href="Le_Xuan_Thinh_Khoa_Co_Khi/html/index.html" target="_blank">Khoa Cơ Khí</a>
+            <a href="Lam_Hoai_Nhon_Page_Phong_Dao-Tao/khoa.html" class="nav" target="_blank">Phòng Đào Tạo</a>
           </nav>
         </div>
       </section>
@@ -56,20 +35,23 @@
             <img
               name="slide"
               id="intro1"
-              src="img/images1.png"
+              src=""
               alt="Anh intro"
-              style="width: 70%"
+              style="width: 100%"
             />
           </div>
           <div>
-            <video id="video" style="width: 70%" controls>
+            <video id="video" style="width: 100%" controls>
               <source
                 src="media/y2mate.com - Thông Tin Tuyển Sinh 2022  Trường Cao Đẳng Kỹ Thuật Cao Thắng_480p.mp4"
               />
             </video>
           </div>
           <div>
-            <a href="">
+            <a
+              href="http://tuyensinh.caothang.edu.vn/Register_ThiTHPT.aspx"
+              target="_blank"
+            >
               <img
                 class="dangky"
                 src="img/Dangkyxettuyen.png"
@@ -77,7 +59,9 @@
             /></a>
           </div>
           <div>
-            <a href=""
+            <a
+              href="https://caothang.edu.vn/huong-dan-xet-ket-qua-thi-thpt-2022.html"
+              target="_blank"
               ><img
                 class="dangky"
                 src="img/dangkyxettuyen2.png"
@@ -85,7 +69,10 @@
             /></a>
           </div>
           <div>
-            <a href="">
+            <a
+              href="https://caothang.edu.vn/huong-dan-xet-dgnl-dhqg-tphcm-2022.html"
+              target="_blank"
+            >
               <img
                 class="dangky"
                 src="img/dangkyxettuyen3.png"
@@ -94,7 +81,7 @@
             </a>
           </div>
           <div>
-            <a href=""
+            <a href="https://www.facebook.com/caothang.edu.vn" target="_blank"
               ><img
                 class="dangky"
                 src="img/dangkyxettuyen4.png"
@@ -106,16 +93,25 @@
               <h3 class="menu">Tuyển Sinh</h3>
               <ul>
                 <li class="tuyensinh1">
-                  <a href=""
+                  <a
+                    class="color"
+                    href="https://caothang.edu.vn/Thong-bao-tuyen-sinh-Dai-hoc-nam-2022-truong-DH-Bach-Khoa-TpHCM-Dot-2.html"
+                    target="_blank"
                     >Thông Báo tuyển sinh đại học 2022 đại học Bách Khoa năm học
                     2022</a
                   >
                 </li>
                 <li class="tuyensinh1">
-                  <a href="">Thông tin tuyển sinh cao đẳng các ngành nghề</a>
+                  <a
+                    class="color"
+                    href="https://caothang.edu.vn/thong-tin-tuyen-sinh-2022.html"
+                    >Thông tin tuyển sinh cao đẳng các ngành nghề</a
+                  >
                 </li>
                 <li class="tuyensinh1">
-                  <a href=""
+                  <a
+                    class="color"
+                    href="https://caothang.edu.vn/huong-dan-xet-ket-qua-thi-thpt-2022.html"
                     >Hướng dẫn đăng ký xét tuyển các ngành nghề sử dụng kết quả
                     tốt nghiệp của kỳ thi THPT quốc gia năm 2022
                   </a>
@@ -128,24 +124,26 @@
               <h3 class="menu">E-Learning</h3>
               <ul>
                 <li class="tuyensinh2">
-                  <a href=""
+                  <a class="color" href=https://caothang.edu.vn/Huong-dan-su-dung-man-hinh-cam-ung-tuong-tac.html""
                     >Hướng dẫn sử dụng màn hình cảm ứng tương tác
                     phòng-Multimedia</a
                   >
                 </li>
                 <li class="tuyensinh2">
-                  <a href=""
+                  <a class="color" href="https://caothang.edu.vn/huong-dan-ket-noi-thiet-bi-di-dong-voi-tivi-may-chieu.html"
                     >Hướng dẫn nhân đôi màn hình từ thiết bị di động sang màn
                     hình TV/Máy chiếu bằng HDMI không dây
                   </a>
                 </li>
                 <li class="tuyensinh2">
-                  <a href=""
+                  <a class="color" href="https://caothang.edu.vn/Huong-dan-su-dung-may-quay-SONY-NX80.html"
                     >Hướng dẫn sử dụng máy quay SONY NX80 phòng - Multimedia</a
                   >
                 </li>
                 <li class="tuyensinh2">
-                  <a href="">Hướng dẫn học E-Learning-Dành cho sinh viên</a>
+                  <a class="color" href="https://caothang.edu.vn/Huong-dan-hoc-E-LEARNING---Danh-cho-Sinh-vien.html"
+                    >Hướng dẫn học E-Learning-Dành cho sinh viên</a
+                  >
                 </li>
               </ul>
             </div>
@@ -153,29 +151,31 @@
           <div class="divpkcha">
             <div id="divpkcon">
               <h3 class="menu">Tin tức từ Phòng-Khoa</h3>
-              <ul>
+              <ul style="list-style-type:square">
                 <li class="tuyensinh3">
-                  <a href=""
+                  <a class="color" href="https://hcqt.caothang.edu.vn/Che-do-HSSV/Danh-sach-du-kien-xet-mien-giam-hoc-phi-cua-6-thang-dau-nam-2022.html"
                     >Danh sách dự kiến xét giảm học phí của 6 tháng đầu 2022</a
                   >
                 </li>
                 <li class="tuyensinh3">
-                  <a href=""
+                  <a class="color" href="https://hcqt.caothang.edu.vn/Che-do-HSSV/Huong-dan-nop-giay-bo-sung-Doi-voi-HSSV-da-lam-don-lan-dau-o-cac-hoc-ky-truoc-va-nop-don-lan-dau-mien-giam-hoc-phi.html"
                     >Hướng dẫn nộp giấy bổ sung, nộp đơn lần đầu, miễn,giảm học
                     phí trong 6 tháng 2022</a
                   >
                 </li>
                 <li class="tuyensinh3">
-                  <a href="">Hướng dẫn nộp đơn khoá 2021</a>
+                  <a class="color" href="https://hcqt.caothang.edu.vn/Che-do-HSSV/Trich-huong-dan-nop-don-nhan-lai-khoan-cap-bu-tien-mien-giam-hoc-phi-trong-HSSV-khoa-2021.html">Hướng dẫn nộp đơn khoá 2021</a>
                 </li>
                 <li class="tuyensinh3">
-                  <a href=""
+                  <a class="color" href="https://hcqt.caothang.edu.vn/Bao-hiem-y-te/Trich-huong-dan-thuc-hien-BH-y-te-dot-cuoi-cung-tu-ngay-07-den-ngay-11032022-trong-HSSV-khoa-2019-khoa-2020-khoa-2021.html"
                     >Hướng dẫn thực hiện BH y tế đợt cuối cùng khoá
                     2019,2020,2021</a
                   >
                 </li>
                 <li class="tuyensinh3">
-                  <a href="">Hướng dẫn thanh toán tiền bảo hiểm y tế</a>
+                  <a class="color" href="https://tckt.caothang.edu.vn/thong-bao-hssv/Huong-dan-thanh-toan-bhyt-hssv.html"
+                    >Hướng dẫn thanh toán tiền bảo hiểm y tế</a
+                  >
                 </li>
               </ul>
             </div>
@@ -187,25 +187,105 @@
               <h3 class="menu">Tin mới nhất</h3>
               <ul>
                 <li class="new">
-                  <a href="">Mini car racing Cao Thắng 2022</a>
+                  <a class="color" href="">Mini car racing Cao Thắng 2022</a>
                 </li>
                 <hr />
-                <li class="new"><a href="">Lịch công tác tuần thứ 45</a></li>
+                <li class="new">
+                  <a class="color" href="">Lịch công tác tuần thứ 45</a>
+                </li>
                 <hr />
                 <li class="new">
-                  <a href=""
+                  <a class="color" href=""
                     >Hội thảo lấy ý kiến Doanh nghiệp về cơ sở vật chất và
                     chương trình đào tạo
                   </a>
                 </li>
                 <hr />
-                <li class="new"><a href="">Kế hoạch giảng dạy</a></li>
+                <li class="new">
+                  <a class="color" href="">Kế hoạch giảng dạy</a>
+                </li>
               </ul>
+            </div>
+          </div>
+          <div>
+            <img id="ksvl" src="img/ksvl.png" alt="Khao sát việc làm" />
+          </div>
+          <div>
+            <video id="video2" controls>
+              <source
+                src="media/y2mate.com - Bạn đã sẵn sàng gia nhập cộng đồng Cao Thắng_480p.mp4"
+              />
+            </video>
+          </div>
+          <div>
+            <iframe
+              id="iframe"
+              src="https://www.facebook.com/caothang.edu.vn/"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div id="mapcha">
+            <div id="mapcon">
+              <h3 class="menu">Địa chỉ</h3>
+              <img
+                style="width: 100%"
+                src="img/map.png"
+                alt="Bản đồ cao thắng"
+              />
+            </div>
+          </div>
+          <div id="messcha">
+            <div id="messcon">
+              <h3 class="menu">Lượt truy cập</h3>
+              <p class="titile1">Hôm nay:</p>
+              <p class="titile">12345</p>
+              <br />
+              <p class="titile1">Tuần này:</p>
+              <p class="titile">54321</p>
+              <br />
+              <p class="titile1">Tháng này:</p>
+              <p class="titile2">56789</p>
             </div>
           </div>
         </div>
       </section>
+      <div class="logocha">
+        <a class="logo" href=""
+          ><img class="piclogo" src="img/1.png" alt="logo1"
+        /></a>
+        <a href="" class="logo"
+          ><img class="piclogo" src="img/2.png" alt="logo2"
+        /></a>
+        <a href="" class="logo"
+          ><img class="piclogo" src="img/3.png" alt="logo3"
+        /></a>
+        <a href="" class="logo"
+          ><img class="piclogo" src="img/4.png" alt="logo4"
+        /></a>
+        <a href="" class="logo"
+          ><img class="piclogo" src="img/5.png" alt="logo5"
+        /></a>
+        <a href="" class="logo"
+          ><img class="piclogo" src="img/6.jpg" alt="logo6"
+        /></a>
+        <a href="" class="logo"
+          ><img class="piclogo" src="img/7.png" alt="logo7"
+        /></a>
+        <a href="" class="logo"
+          ><img class="piclogo" src="img/8.png" alt="logo8"
+        /></a>
+        <a href="" class="logo"
+          ><img class="piclogo" src="img/9.png" alt="logo9"
+        /></a>
+      </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p id="first">Địa chỉ: 65 Huỳnh Thúc Kháng,P.Bến Nghé,Q1,Tp.HCM</p>
+      <p class="second">Tel:028 38 212 868 -Fax : 028 38 215 951</p>
+      <p class="second">
+        Website: <a class="adress" href="">caothang.edu.vn</a>- Email :
+        <a class="adress" href="">ktcaothang@caothang.edu.vn</a>
+      </p>
+    </footer>
   </body>
 </html>

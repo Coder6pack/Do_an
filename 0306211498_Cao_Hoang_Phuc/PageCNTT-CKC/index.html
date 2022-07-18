@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page CNTT Cao Thang</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            
+            margin: 0;
+            font-family: "Roboto",sans-serif;
+            font-size: 20px;
+            
+        }
+        #header{
+            margin: 0%;
+            background-color: rgb(37, 59, 128);
+            
+            
+            width: 100%;
+            
+            padding: 0 10%;
+            
+            z-index: 5;
+           
+            
+            
+        }
+        
+        #logo{
+            
+            display: block;
+            margin:0 ;
+            
+        }
+       
+        img{
+            color: rgba(255, 255, 255, 0.75);
+            border-image-repeat: stretch;
+            height: 90px;
+            width: 350px;
+            display: block;
+            
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .menu-item{
+        
+        display: inline-block;
+        text-align: center;
+        margin: 0px;
+        border-left: solid 1px rgba(255, 255, 255, 0.75);
+       
+       
+        position: relative;
+       }
+       #menu{
+           text-align: center;
+           display: block;
+           
+           padding:0;
+           
+           margin:0; 
+          
+           
+          
+                                       
+       }
+       #list-menu{
+        margin: 0%;
+        
+        
+        
+       }
+       .item{
+        display: inline-block;
+        padding: 22px;
+        position: relative; 
+        
+        
+        
+       }
+       #list-none-1,#list-none-2,#list-none-3,#list-none-4,#list-none-5{
+        position: absolute;
+       
+        margin: 0;
+        padding: 0%;
+        text-align: left;
+        list-style:none;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        
+        
+       }
+       #list-none-1{
+        width: 400%;
+        display:none;
+       }
+       #list-none-2{
+        width: 150%;
+        display: none;
+       }
+       #list-none-3{
+        width: 250%;
+        display: none;
+       }
+       #list-none-4{
+        width: 200%;
+        display: none;
+       }
+       #list-none-5{
+        width: 120%;
+        display: none;
+       }
+       
+       
+       #container{
+            
+            display: flex;
+            justify-content: space-between;
+            
+       }
+       .li1,.li2,.li3{
+        padding: 15px;
+        margin: 0;
+        list-style: none;
+        font-size: 16px;
+       }
+       li.li1:hover,li.li2:hover,li.li3:hover{
+        background-color: rgb(0, 195, 255);
+        
+       }
+       .li-head1{
+        border-bottom:solid 1px rgba(255, 255, 255, 0.5);
+        padding-bottom: 10px;
+
+       }
+       .item-none-1{
+        padding:0;
+        
+       }
+       .menu-link{
+        color: rgba(255, 255, 255, 0.8);
+       
+       }
+       .ul-li{
+        padding: 0;
+       }
+       
+      
+       
+       
+      
+       i{
+           color: rgba(255, 255, 255, 0.5);
+           font-size: 13px;
+           
+       }
+       #Body-3{
+           background-color: white;
+           
+           display: inline-block;
+           width: 100%;
+           height: auto;margin: 5px 0;
+           padding:20px 15%;
+       }
+       footer{
+            /* display: none; */
+           background-color:black;
+           color: white;
+           position: relative;
+           overflow: auto;
+           padding: 10px 100px;
+       }
+       .container-bot{
+
+           display: inline-block;
+           width: 25%;
+           padding: 0 20px;
+           float: left;
+           margin: 10px;
+       }
+       #bottom-1,#bottom-3{
+           text-align: left;
+           justify-content: center;
+           display: flex;
+       }
+       #widget-inner{
+        
+           display: inline-block;
+           width: 95%;
+           border-top: 1px solid white ;
+           line-height: 0px;
+        
+           
+           
+           
+           
+       }
+       .thamgia{
+           padding: 15px 20px;
+           border: 2px solid rgb(23, 155, 215);
+           background-color: rgb(23, 155, 215);
+           color: white;
+           font-size: 20px;
+           transition: all 0.25s linear;
+           
+           
+       }
+       .thamgia:hover{
+            border: 2px solid black;
+            background-color: rgb(255, 255, 255);
+            color: black;
+       }
+       
+       
+          
+       #bottom-2{
+           padding: 30px 0;
+           position: relative;
+           
+           text-align: center;
+          
+       }
+       .address-bot, .p-bot{
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.7);
+       }
+       a.address-bot:hover{
+        color: white;
+       }
+       
+        
+      
+       .list-type{                   
+            list-style: disc;          
+            margin: 10px 0;
+            padding: 0;
+       }
+       .btn-left{
+        float: left;
+        margin: 20px 0;
+       }
+
+       .btn-right{
+        border: solid 1px white;
+        background-color: #179BD7 ;
+        padding: 10px;
+        float: right;
+        margin: 20px 0;
+        transition: all 0.25s linear;
+       }
+       .btn-right:hover{
+        background-color: rgb(0, 195, 255);
+       }
+       .tieude{
+        display: block;
+        overflow: auto;
+       }
+        
+        .img-content-bd{
+            height: 258px;
+            width: 258px;
+            
+        } 
+        .date{
+            padding: 15px;
+            width: 258px;
+            position: absolute;
+            color: white;
+            background-color: rgba(70,165,229,0.8);
+            transition: all 0.25s linear;
+        }
+        .item-thumbnail{
+            position: relative;
+            display: inline-block;
+            padding:0 40px;
+            width: 24%;
+        }
+        
+        .main-color-1-hover{
+            color: black;
+            
+            
+        }
+        .main-color-1-hover:hover{
+            color: rgba(0, 0, 0, 0.7);
+        }    
+        h3{
+            margin: 0%;
+            margin-top: 10px;
+        }
+        .btn-thumbnail{
+            background-color: #179BD7;
+            color: white;
+            padding: 10px 20px;
+            transition: all 0.25s linear;
+
+        }
+        .btn-thumbnail:hover{
+            background-color: rgb(0, 195, 255);
+            
+            
+
+        }
+        .container-bd-end{
+            border-top: solid 1px black;
+           margin: 40px 0;
+           padding: 25px 0;
+            
+        }
+        .content-bd{
+            height: 600px;
+            
+        }
+        .width-258{
+            width: 258px;
+            margin: 15px 0 0 0;
+            height: 140px;
+        }
+       h3.width-258{
+        height: 125px;
+       }
+       .btn-bd2{
+        padding: 10px;
+        background-color: #179BD7;
+        border: solid 2px white;
+        transition: all 0.25s linear;
+       }
+       .btn-bd2:hover{
+        
+        background-color: rgb(0, 195, 255);
+        
+       }
+       #container-bd2{
+        padding: 100px 0;
+        background-image: url(Yelan.png);
+        background-size: 950px 700px;
+
+       }
+       #Body-1{
+        padding: 20px 0 0 0;
+        background-image: url(nganh-it-o-viet-nam-wallpaper-678x381.jpg);
+        background-size: 100% 100%;
+        margin: 5px 0;
+        color: white;
+        height: auto;
+       }
+       #body-1-top{
+        margin-bottom: 100px;
+       }
+       #body-1-bot{
+        background-color: #179BD7;
+        
+        height: auto;
+       }
+       #container-bd-1-bot{
+        padding: 20px 0 40px 0;
+        display: flex;
+        justify-content: center;
+       }
+       .content-bd-1-bot{
+        margin: 10px 30px;
+       }
+
+       #slideshow{
+        margin: 5px 0;
+        background-image: url(image/slide/1.png);
+        background-size: 100% 744px;
+        width: 100%;
+        height: 744px;
+       }
+    
+
+       #btn-slide-back,#btn-slide-next,.btn-back-next{
+        
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+       }
+       #btn-slide-next{
+        right: 20px;
+        
+       }
+       #btn-slide-back{
+        left: 20px;
+       }
+       #btn-slide-next-4{
+        right: 20px;
+        
+       }
+       #btn-slide-back-4{
+        left: 20px;
+       }
+       
+       .btn-back-next:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+       }
+       button{
+        color: white;
+        border-style: solid ;
+        border-color: rgba(255, 255, 255, 0.7);
+       }
+       #btn-slide-back:hover,#btn-slide-next:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+       }
+       #ThongBao{
+        margin: 5px 0;
+        padding: 20px 20px 50px 20px;
+        display: flex;
+        justify-content: center;
+        background-color: #179BD7;
+        width: 100%;
+        height: auto;
+        position: relative;
+       }
+       #post-1,#post-2,#post-3,#post-4,#post-5,#post-6{
+        
+        display: inline-block;
+        
+        background-size: 100% 230px;
+        width: 270px;
+        height: 230px;
+        
+        
+       }
+       #post-1,#post-2,#post-3,#post-6{
+        background-image: url(image/thongbao-554x500.jpg);
+       }
+       #post-4{
+        background-image: url(image/289416868_452256616899582_7733863896618851603_n-554x674.jpg);
+       }
+       #post-5{
+        background-image: url(image/40295055_926764634174187_5641848834310127538_n-526x526.jpg);
+       }
+
+
+
+
+       
+       .date-post{
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        font-size: 12px;
+       }
+       .news{
+        position: relative;
+        margin: 0 20px;
+        height: 340px;
+        
+        
+       }
+       .event-post{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        bottom: 0;
+        padding: 10px;
+        
+        
+       }
+       .post-none{
+        border-top: solid 1px white;
+        padding: 20px 0 10px 0;
+        display: none;
+        
+        
+       }
+       .event-content{
+        margin: 20px 0;
+       }
+       #news-5,#news-6{
+        display: none;
+       }
+       .line-move{
+        display: inline-block;
+        background-color: black;
+        position: absolute;
+        transition: all 0.25s linear;
+       }
+       .line-move-1,.line-move-3{
+        width: 0;
+        height: 2px;
+       
+       }
+       .line-move-2,.line-move-4{
+        width: 2px;
+        height: 0;
+        
+       }
+       .line-move-1{
+        top: 0;
+        left: 0;
+        
+       }
+       .line-move-2{
+        top: 0;
+        right: 0;
+        transition-delay: 0.25s;
+       }
+       .line-move-4{
+        bottom: 0;
+        left: 0;
+        transition-delay: 0.75s;
+       }
+       .line-move-3{
+        bottom: 0;
+        right: 0;
+        transition-delay: 0.5s;
+       }
+
+       .news:hover .line-move-1,.news:hover .line-move-3{
+            width: 100%;
+       }
+       .news:hover .line-move-2,.news:hover .line-move-4{
+            height: 100%;
+       }
+       .button{
+        color: white;
+        padding: 17px 17px 8px 17px;
+        position: fixed;
+        top: 900px;
+        right: 10px;
+        
+        background-color: rgba(0, 0, 0, 0.2);
+        
+        border: white solid 1px;
+        z-index: 6;
+        
+       }
+       
+       
+     
+       
+        
+    </style>
+
+   
+    
+</head>
+<body>
+    <header>
+        
+       
+        <div id="header">
+
+            <a href="#header" class="button">
+                ^
+                
+            </a>
+            <div id="container">
+                <div id="logo">
+                    <a href=""> <img src="image/Untitled-11.png" alt="" srcset=""> </a>
+                </div>
+                
+                <div id="menu">
+                    
+
+
+                    <ul id="list-menu">
+                        <li class="menu-item" id="item-1" onmouseenter="light('item-1','sub-1')" onmouseleave="normal('item-1','sub-1')">
+                            <a href="" class="item">Trang Chủ <br> <i id="sub-1">Home page</i> </a>
+
+                        </li>
+
+                        <li class="menu-item" id="item-2"  onmouseenter="light('item-2','sub-2','list-none-1')" onmouseleave="normal('item-2','sub-2','list-none-1')">
+                            <a href="#" class="item">Giới Thiệu <br> <i id="sub-2">About us</i></a>
+                            <ul id="list-none-1">
+                                <li class="item-none-1">
+                                    <ul class="li1 ul-li">
+                                        <li class="li1 li-head1"><a href="#" class="sub-menu-link">Khoa Công nghệ Thông tin </a></li>
+                                        <li class="li1"><a href="https://cntt.caothang.edu.vn/gioi-thieu-chung/" class="menu-link  sub-menu-link">Giới Thiệu Chung </a></li>
+                                        <li class="li1"><a href="https://cntt.caothang.edu.vn/tam-nhin-su-mang/" class="menu-link  sub-menu-link">Tầm Nhìn – Sứ Mạng </a></li>
+                                        <li class="li1"><a href="https://cntt.caothang.edu.vn/muc-tieu-dao-tao-chuan-dau-ra-nganh-cntt/" class="menu-link  sub-menu-link">Mục Tiêu Đào Tạo – Chuẩn Đầu Ra Chương Trình </a></li>
+                                    </ul>
+
+                                </li>
+                                <li class="item-none-1">
+                                    <ul class="li2 ul-li">
+                                        <li class="li2 li-head1" ><a href="https://cntt.caothang.edu.vn/co-so-vat-chat/" class="  sub-menu-link">Cơ Sở Vật Chất </a></li>
+                                        <li class="li2"><a href="https://cntt.caothang.edu.vn/bao-cao-danh-gia-chat-luong-dao-tao/" class="menu-link  sub-menu-link">Báo cáo đánh giá chất lượng đào tạo </a></li>
+                                        
+
+                                    </ul>
+                                </li>
+                                <li class="item-none-1">
+                                    <ul class="li3 ul-li">
+                                    <li class="li3 li-head1"><a href="#" class="  sub-menu-link">Cơ Cấu Tổ Chức </a></li>
+                                    <li class="li3"><a href="https://cntt.caothang.edu.vn/ban-chu-nhiem-khoa/" class="menu-link  sub-menu-link">Ban Chủ Nhiệm Khoa </a></li>
+                                    <li class="li3"><a href="https://cntt.caothang.edu.vn/cac-chuyen-nganh/" class="menu-link  sub-menu-link">Các Hệ Đào Tạo </a></li>
+                                    <li class="li3"><a href="https://cntt.caothang.edu.vn/cac-bo-phan-lien-quan-hoi-dong/" class="menu-link  sub-menu-link">Các Bộ Phận Liên Quan &amp; Hội Đồng </a></li>
+                                    <li class="li3"><a href="https://cntt.caothang.edu.vn/bm-cong-nghe-phan-mem/" class="menu-link  sub-menu-link">BM. Công Nghệ Phần Mềm </a></li>
+                                    <li class="li3"><a href="https://cntt.caothang.edu.vn/bm-phan-cung-mang-may-tinh/" class="menu-link  sub-menu-link">BM. Phần Cứng &amp; Mạng Máy Tính </a></li>
+                                    <li class="li3"><a href="https://cntt.caothang.edu.vn/lien-he/" class="menu-link  sub-menu-link">Liên Hệ </a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+
+                        </li>
+
+                        <li class="menu-item" id="item-3"  onmouseenter="light('item-3','sub-3','list-none-2')" onmouseleave="normal('item-3','sub-3','list-none-2')">
+                            <a href="#" class="item">Học Trực Tuyến <br> <i id="sub-3">Elearning</i></a>
+                            <ul id="list-none-2">
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/huong-dan-su-dung-elearning/" class="menu-link  sub-menu-link">Hướng dẫn sử dụng </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/lich-hoc-truc-tuyen-elearning/" class="menu-link  sub-menu-link">Lịch học trực tuyến </a></li>
+                                <li class="li1"><a href="http://cntt.caothang.edu.vn/khao-sat-hoc-truc-tuyen/" class="menu-link  sub-menu-link">Khảo sát học trực tuyến </a></li>
+                                
+
+
+                            </ul>
+
+                        </li>
+
+                        <li class="menu-item" id="item-4"  onmouseenter="light('item-4','sub-4','list-none-3')" onmouseleave="normal('item-4','sub-4','list-none-3')">
+                            <a href="#" class="item">Tin Tức <br> <i id="sub-4">News</i></a>
+
+                            <ul id="list-none-3">
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/thong-tin-chung/" class="menu-link  sub-menu-link">Thông Tin Chung </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/thong-bao-he-cao-dang-chinh-qui/" class="menu-link  sub-menu-link">Thông Báo Hệ Cao Đẳng Tin Học </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/thong-bao-he-cao-dang-nghe/" class="menu-link  sub-menu-link">Thông Báo Hệ Cao Đẳng Nghề </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/thong-tin-tuyen-dung/" class="menu-link  sub-menu-link">Thông Tin Tuyển Dụng </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/thanh-tich-sinh-vien/" class="menu-link  sub-menu-link">Thành Tích Sinh Viên </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/tin-tuc-thoi-su-cntt/" class="menu-link  sub-menu-link">Tin Tức Thời Sự CNTT </a></li>
+                                
+
+
+                            </ul>
+
+                        </li>
+
+                        <li class="menu-item" id="item-5"  onmouseenter="light('item-5','sub-5','list-none-4')" onmouseleave="normal('item-5','sub-5','list-none-4')">   
+                            <a href="#" class="item">Sinh Viên <br> <i id="sub-5">Student</i></a>
+                            <ul id="list-none-4">
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/thong-tin-chung-2/" class="menu-link  sub-menu-link">Thông Tin Chung </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/chuong-trinh-dao-tao/" class="menu-link  sub-menu-link">Chương Trình Đào Tạo </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/ke-hoach-hoc-vu/" class="menu-link  sub-menu-link">Kế Hoạch Học Vụ </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/thoi-khoa-bieu/" class="menu-link  sub-menu-link">Thời Khóa Biểu </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/cuu-sinh-vien/" class="menu-link  sub-menu-link">Cựu Sinh Viên </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/hoat-dong-sinh-vien/" class="menu-link  sub-menu-link">Hoạt Động Sinh Viên </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/tra-cuu-ket-qua-hoc-tap/" class="menu-link  sub-menu-link">Tra Cứu Kết Quả Học Tập </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/bang-vang-thanh-tich/" class="menu-link  sub-menu-link">Bảng vàng thành tích </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/co-hoi-nghe-nghiep/" class="menu-link  sub-menu-link">Cơ Hội Nghề Nghiệp </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/mau-don-qui-dinh/" class="menu-link  sub-menu-link">Mẫu Đơn &amp; Qui Định </a></li>
+                                
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/de-thi-dap-an/" class="menu-link  sub-menu-link">Đề Thi – Đáp Án </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/tai-lieu-hoc-tap/" class="menu-link  sub-menu-link">Tài Liệu Học Tập </a></li>
+                                
+
+
+                            </ul>
+
+                        </li>
+
+                        <li class="menu-item" id="item-6"  onmouseenter="light('item-6','sub-6','list-none-5')" onmouseleave="normal('item-6','sub-6','list-none-5')">
+                            <a href="#" class="item">Hợp Tác Nghiên Cứu <br> <i id="sub-6">Collaborative Research</i></a>
+
+                            <ul id="list-none-5">
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/hop-tac-quoc-te/" class="menu-link  sub-menu-link">Hợp Tác Quốc Tế </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/doanh-nghiep-dong-hanh/" class="menu-link  sub-menu-link">Doanh Nghiệp Đồng Hành </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/cong-trinh-khoa-hoc/" class="menu-link  sub-menu-link">Công Trình Khoa Học </a></li>
+                                <li class="li1"><a href="https://cntt.caothang.edu.vn/huong-nghien-cuu/" class="menu-link  sub-menu-link">Hướng Nghiên Cứu </a></li>
+                                
+                            </ul>
+
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <div id="slideshow">
+        
+        <button id="btn-slide-back" onclick="back()"> < </button>
+        <button id="btn-slide-next" onclick="next()"> > </button>
+        
+        </div>
+
+
+    </div>
+
+    <div id="ThongBao">
+        <button id="btn-slide-back-4" class="btn-back-next" onclick="back_4()"> < </button>
+        <button id="btn-slide-next-4" class="btn-back-next" onclick="next_4()"> > </button>
+        <div class="news" id="news-1" onmouseenter="blockk('post-none-1','1')" onmouseleave="nonee('post-none-1','1')">
+
+            <span id="li1-1" class="line-move-1 line-move"></span>
+            <span id="li1-2" class="line-move-2 line-move"></span>
+            <span id="li1-3" class="line-move-3 line-move"></span>
+            <span id="li1-4" class="line-move-4 line-move"></span>
+
+            <div id="post-1">
+
+            </div>
+            <div class="date-post">
+                <div class="nam">2022</div>
+                <div class="ngay">04</div>
+                <div class="thang">JUL</div>
+    
+            </div>
+            <div class="event-post">
+                <a class="overlay-top" href="https://cntt.caothang.edu.vn/thong-bao-thoi-gian-phan-bien-bao-ve-datn-cd-th-19/" title="[THÔNG BÁO] THỜI GIAN PHẢN BIỆN &amp; BẢO VỆ ĐATN CĐ TH 19">
+                    <h4 class="event-content">[THÔNG BÁO] THỜI GIAN PHẢN BIỆN &amp; BẢO VỆ ĐATN CĐ TH 19</h4>
+
+                </a>
+
+                <div class="post-none" id="post-none-1">Thông báo về việc phản biện và bảo vệ</div>
+
+            </div>
+        </div>
+
+        <div class="news" id="news-2" onmouseenter="blockk('post-none-2','2')" onmouseleave="nonee('post-none-2','2')">
+            <span id="li2-1" class="line-move-1 line-move"></span>
+            <span id="li2-2" class="line-move-2 line-move"></span>
+            <span id="li2-3" class="line-move-3 line-move"></span>
+            <span id="li2-4" class="line-move-4 line-move"></span>
+            <div id="post-2">
+
+            </div>
+            <div class="date-post">
+                <div class="nam">2022</div>
+                <div class="ngay">29</div>
+                <div class="thang">JUN</div>
+    
+            </div>
+            <div class="event-post">
+                <a class="overlay-top" href="https://cntt.caothang.edu.vn/thong-bao-tuyen-dung-dot-thang-6-nam-2022/" title="[THÔNG BÁO] TUYỂN DỤNG ĐỢT THÁNG 6 NĂM 2022">
+                    <h4 class="event-content">[THÔNG BÁO] TUYỂN DỤNG ĐỢT THÁNG 6 NĂM 2022</h4>
+                </a>
+
+                <div class="post-none" id="post-none-2">Trường Cao đẳng Kỹ thuật Cao Thắng thông báo</div>
+
+            </div>
+        </div>
+
+        <div class="news" id="news-3" onmouseenter="blockk('post-none-3','3')" onmouseleave="nonee('post-none-3','3')"> 
+            <span id="li3-1" class="line-move-1 line-move"></span>
+            <span id="li3-2" class="line-move-2 line-move"></span>
+            <span id="li3-3" class="line-move-3 line-move"></span>
+            <span id="li3-4" class="line-move-4 line-move"></span>
+            <div id="post-3">
+
+            </div>
+            <div class="date-post">
+                <div class="nam">2022</div>
+                <div class="ngay">29</div>
+                <div class="thang">JUN</div>
+    
+            </div>
+            <div class="event-post">
+                <a class="overlay-top" href="https://cntt.caothang.edu.vn/thong-bao-vv-nop-bao-cao-va-cham-thuc-tap-tot-nghiep-lich-on-thi-tot-nghiep-cdn-scmt-19ab/" title="[THÔNG BÁO] V/V NỘP BÁO CÁO VÀ CHẤM THỰC TẬP TỐT NGHIỆP, LỊCH ÔN THI TỐT NGHIỆP CĐN SCMT 19AB">
+                    <h4 class="event-content">[THÔNG BÁO] V/V NỘP BÁO CÁO VÀ CHẤM THỰC TẬP TỐT NGHIỆP, LỊCH ÔN THI TỐT NGHIỆP CĐN SCMT 19AB</h4>
+                </a>
+
+                <div class="post-none" id="post-none-3">Thông báo về việc nộp báo cáo và chấm</div>
+
+            </div>
+        </div>
+
+        <div class="news" id="news-4" onmouseenter="blockk('post-none-4','4')" onmouseleave="nonee('post-none-4','4')">
+            <span id="li4-1" class="line-move-1 line-move"></span>
+            <span id="li4-2" class="line-move-2 line-move"></span>
+            <span id="li4-3" class="line-move-3 line-move"></span>
+            <span id="li4-4" class="line-move-4 line-move"></span>
+            <div id="post-4">
+
+            </div>
+            <div class="date-post">
+                <div class="nam">2022</div>
+                <div class="ngay">28</div>
+                <div class="thang">JUN</div>
+    
+            </div>
+            <div class="event-post">
+                <a class="overlay-top" href="https://cntt.caothang.edu.vn/huong-den-chung-ket-olympic-tin-hoc-cao-thang-lan-06-2022/" title="HƯỚNG ĐẾN CHUNG KẾT OLYMPIC TIN HỌC CAO THẮNG LẦN 06 – 2022">
+                    <h4 class="event-content">HƯỚNG ĐẾN CHUNG KẾT OLYMPIC TIN HỌC CAO THẮNG LẦN 06 – 2022</h4>
+                </a>
+
+                <div class="post-none" id="post-none-4">Năm 2022, cuộc thi Olympic Tin học Cao Thắng</div>
+
+            </div>
+        </div>
+
+        <div class="news" id="news-5" onmouseenter="blockk('post-none-5','5')" onmouseleave="nonee('post-none-5','5')">
+            <span id="li5-1" class="line-move-1 line-move"></span>
+            <span id="li5-2" class="line-move-2 line-move"></span>
+            <span id="li5-3" class="line-move-3 line-move"></span>
+            <span id="li5-4" class="line-move-4 line-move"></span>
+            <div id="post-5">
+
+            </div>
+            <div class="date-post">
+                <div class="nam">2022</div>
+                <div class="ngay">07</div>
+                <div class="thang">JUN</div>
+    
+            </div>
+            <div class="event-post">
+                <a class="overlay-top" href="https://cntt.caothang.edu.vn/tuyen-dung-cong-ty-tnhh-dv-vien-thong-phuong-nam/" title="[TUYỂN DỤNG] CÔNG TY TNHH DV VIỄN THÔNG PHƯƠNG NAM">
+                    <h4 class="event-content">[TUYỂN DỤNG] CÔNG TY TNHH DV VIỄN THÔNG PHƯƠNG NAM</h4>
+                </a>
+
+                <div class="post-none" id="post-none-5">CÔNG TY TNHH DV VIỄN THÔNG PHƯƠNG NAM&nbsp;(Đối tác)</div>
+
+            </div>
+        </div>
+
+        <div class="news" id="news-6" onmouseenter="blockk('post-none-6','6')" onmouseleave="nonee('post-none-6','6')">
+            <span id="li6-1" class="line-move-1 line-move"></span>
+            <span id="li6-2" class="line-move-2 line-move"></span>
+            <span id="li6-3" class="line-move-3 line-move"></span>
+            <span id="li6-4" class="line-move-4 line-move"></span>
+            <div id="post-6">
+
+            </div>
+            <div class="date-post">
+                <div class="nam">2022</div>
+                <div class="ngay">03</div>
+                <div class="thang">JUN</div>
+    
+            </div>
+            <div class="event-post">
+                <a class="overlay-top" href="https://cntt.caothang.edu.vn/thong-bao-vv-thuc-hien-do-an-tot-nghiep-va-nop-phieu-dang-ky-de-tai/" title="[THÔNG BÁO] V/V THỰC HIỆN ĐỒ ÁN TỐT NGHIỆP VÀ NỘP PHIẾU ĐĂNG KÝ ĐỀ TÀI KHOÁ 2019">
+                    <h4 class="event-content">[THÔNG BÁO] V/V THỰC HIỆN ĐỒ ÁN TỐT NGHIỆP VÀ NỘP PHIẾU ĐĂNG KÝ ĐỀ TÀI KHOÁ 2019</h4>
+                </a>
+
+                <div class="post-none" id="post-none-6">Căn cứ vào kế hoạch đào tạo năm học</div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div id="Body-1">
+        <div id="body-1-top">
+            <div>
+                <h3 style="text-align: center;">Tiền thân của khoa Công nghệ Thông tin là bộ môn Tin học (tháng 08 năm 1998) thuộc Khoa Điện Tử – Tin Học trường Cao Đẳng Kỹ Thuật Cao Thắng <br>
+                    Thành lập vào tháng 01 năm 2020.
+                </h3>
+            </div>
+            <div>
+               <p style="text-align:center ;">—Trích lược sử hình thành khoa Công nghệ Thông tin—</p>
+            </div>
+
+        </div>
+        <div id="body-1-bot">
+
+            <div id="container-bd-1-bot">
+
+                <div class="content-bd-1-bot">
+
+                    <h4>TÀI LIỆU HỌC TẬP</h4>
+                    <br> <br>
+                    <div>
+                        <a class="btn-bd2" href="tai-lieu-hoc-tap" >
+                            Chi Tiết&nbsp;&nbsp;</a>
+                    </div>
+
+                </div>
+
+                <div class="content-bd-1-bot">
+
+                    <h4>KẾT QUẢ HỌC TẬP</h4>
+                    <br> <br>
+                    <div>
+                        <a class="btn-bd2" href="tai-lieu-hoc-tap" >
+                            Chi Tiết&nbsp;&nbsp;</a>
+                    </div>
+
+                </div>
+
+                <div class="content-bd-1-bot">
+
+                    <h4>ĐỀ THI - ĐÁP ÁN</h4>
+                    <br> <br>
+                    <div>
+                        <a class="btn-bd2" href="tai-lieu-hoc-tap" >
+                            Chi Tiết&nbsp;&nbsp;</a>
+                    </div>
+
+                </div>
+
+                <div class="content-bd-1-bot">
+
+                    <h4>LỊCH TIẾP SINH VIÊN</h4>
+                    <br> <br>
+                    <div>
+                        <a class="btn-bd2" href="tai-lieu-hoc-tap" >
+                            Chi Tiết&nbsp;&nbsp;</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="Body-2">
+        <div id="container-bd2">
+
+            <div>
+                <p style="text-align: center; color: white;">Bạn có niềm đam mê lập trình? Bạn muốn được trui rèn&nbsp;và thử thách bản thân trong môi trường teamwork? Hãy đến với chúng tôi, CÂU LẠC BỘ TIN HỌC</p> <br>
+                <p style="text-align: center;color: white;">    	
+                    <a class="btn-bd2" href="https://www.facebook.com/cntt.caothang/" >
+                    Fanpage Khoa CNTT </a>
+                    &nbsp; &nbsp; OR &nbsp; &nbsp;     	
+                    <a class="btn-bd2" href="https://www.facebook.com/groups/CKCIT/?fref=ts" >
+                    CLB Tin Học </a>
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div id="Body-3">
+
+       <div class="container-bd-end">
+            <div class="tieude">
+                <h2 class="btn-left">
+                Câu lạc bộ Tin học Cao Thắng
+                </h2>
+                <a class="btn-right" href="http://cntt.caothang.edu.vn/category/clb-tin-hoc-cao-thang">Xem thêm > </a>
+            </div>
+            
+            <div class="content-bd">
+                <div class="item-thumbnail">
+                    <a href="" class="width-258" onmouseenter="Hien('item-date-1')" onmouseleave="An('item-date-1')">
+                        <span id="item-date-1" class="date">16/12/2019</span>
+                        <img class="img-content-bd" src="image/Untitled-1-526x526.png" alt="" >
+                        
+
+                    </a>
+                    <h3 class="width-258">
+                        <a href="https://cntt.caothang.edu.vn/problem-04-finding-a-protein-motif/" title="[PROBLEM 04] FINDING A PROTEIN MOTIF" class="main-color-1-hover">[PROBLEM 04] FINDING A PROTEIN MOTIF</a>
+                    </h3>
+                    <p class="width-258">
+                        DẪN NHẬP Họ Cyclophilin của con người được biểu diễn bởi cấu trúc các isomerase của một số thành tố cấu thành nó. Chức...													
+                    </p>
+                    <div class="width-258">
+                        <a class="btn-thumbnail" href="https://cntt.caothang.edu.vn/problem-04-finding-a-protein-motif/" title="[PROBLEM 04] FINDING A PROTEIN MOTIF">Chi tiết </i></a>
+                    </div>
+
+                    
+                </div>
+                <div class="item-thumbnail">
+                    <a href="" class="width-258" onmouseenter="Hien('item-date-2')" onmouseleave="An('item-date-2')">
+                        <span id="item-date-2" class="date">11/12/2019</span>
+                        <img class="img-content-bd" src="image/bang-vang-thanh-tich-03-526x526.jpg" alt="" >
+                        
+
+                    </a>
+                    <h3 class="width-258">
+                        <a href="https://cntt.caothang.edu.vn/s4l-ket-qua-solutions-for-life-ky-03-translating-into-protein/" title="[S4L] KẾT QUẢ SOLUTIONS FOR LIFE KỲ 03 TRANSLATING INTO PROTEIN" class="main-color-1-hover">[S4L] KẾT QUẢ SOLUTIONS FOR LIFE KỲ 03 TRANSLATING INTO PROTEIN</a>
+                    </h3>
+                    <p class="width-258">
+                        CLB Tin học xin chúc mừng bạn Lê Hoàng Khang (CĐ TH 19C) và bạn Võ Bằng Kiều (CĐ TH 19D) đã có lời giải chính xác cho...													</p>
+                    <div class="width-258">
+                        <a class="btn-thumbnail" href="https://cntt.caothang.edu.vn/problem-04-finding-a-protein-motif/" title="[PROBLEM 04] FINDING A PROTEIN MOTIF">Chi tiết </i></a>
+                    </div>
+
+                    
+                </div>
+
+                <div class="item-thumbnail">
+                    <a href="" class="width-258" onmouseenter="Hien('item-date-3')" onmouseleave="An('item-date-3')">
+                        <span id="item-date-3" class="date">22/11/2019</span>
+                        <img class="img-content-bd" src="image/Untitled-1-526x526.png" alt="" >
+                        
+
+                    </a>
+                    <h3 class="width-258">
+                        <a href="https://cntt.caothang.edu.vn/problem-03-translating-rna-into-protein/" title="[Problem 03] Translating RNA into Protein" class="main-color-1-hover">[Problem 03] TRANSLATING RNA INTO PROTEIN</a>
+                    </h3>
+                    <p class="width-258">
+                        DẪN NHẬP The Genetic Code [1] – Mã di truyền Giống như các acid nucleic là một chuỗi polyme của nucleotides, protein cũng là...																										
+                    </p>
+                    <div class="width-258">
+                        <a class="btn-thumbnail" href="https://cntt.caothang.edu.vn/problem-04-finding-a-protein-motif/" title="[PROBLEM 04] FINDING A PROTEIN MOTIF">Chi tiết </i></a>
+                    </div>
+
+                    
+                </div>
+
+                <div class="item-thumbnail">
+                    <a href="" class="width-258" onmouseenter="Hien('item-date-4')" onmouseleave="An('item-date-4')">
+                        <span id="item-date-4" class="date">21/11/2019</span>
+                        <img class="img-content-bd" src="image/Untitled-1-526x526.png" alt="" >
+                        
+
+                    </a>
+                    <h3 class="width-258">
+                        <a href="https://cntt.caothang.edu.vn/s4l-ket-qua-solutions-for-life-ky-02-overlap-graphs/" title="[S4L] KẾT QUẢ SOLUTIONS FOR LIFE KỲ 02 OVERLAP GRAPHS" class="main-color-1-hover">[S4L] KẾT QUẢ SOLUTIONS FOR LIFE KỲ 02 OVERLAP GRAPHS</a>
+                    </h3>
+                    <p class="width-258">
+                        CLB Tin học xin chúc mừng bạn Phan Nguyễn Huỳnh Tuân đã xuất sắc là thí sinh duy nhất có lời giải chính xác...													</p>
+                    <div class="width-258">
+                        <a class="btn-thumbnail" href="https://cntt.caothang.edu.vn/problem-04-finding-a-protein-motif/" title="[PROBLEM 04] FINDING A PROTEIN MOTIF">Chi tiết </i></a>
+                    </div>
+
+                    
+                </div>
+                
+
+            </div>                      
+       </div>
+
+       <div class="container-bd-end">
+            <div class="tieude">
+                    <h2 class="btn-left">
+                    Thông tin tuyển dụng
+                    </h2>
+                    <a class="btn-right" href="http://cntt.caothang.edu.vn/category/clb-tin-hoc-cao-thang">Xem thêm > </a>
+            </div>
+            <div class="content-bd">
+                <div class="item-thumbnail">
+                    <a href="" class="width-258" onmouseenter="Hien('item-date-5')" onmouseleave="An('item-date-5')">
+                        <span id="item-date-5" class="date">07/06/2022</span>
+                        <img class="img-content-bd" src="image/40295055_926764634174187_5641848834310127538_n-526x526.jpg" alt="" >
+                        
+
+                    </a>
+                    <h3 class="width-258">
+                        <a href="https://cntt.caothang.edu.vn/tuyen-dung-cong-ty-tnhh-dv-vien-thong-phuong-nam/" title="[TUYỂN DỤNG] CÔNG TY TNHH DV VIỄN THÔNG PHƯƠNG NAM" class="main-color-1-hover">[TUYỂN DỤNG] CÔNG TY TNHH DV VIỄN THÔNG PHƯƠNG NAM</a>
+                    </h3>
+                    <p class="width-258">
+                        CÔNG TY TNHH DV VIỄN THÔNG PHƯƠNG NAM&nbsp;(Đối tác độc quyền của FPT Telecom) đang cần tuyển các vị trí sau: Kỹ Thuật Viên...													</p>
+                    <div class="width-258">
+                        <a class="btn-thumbnail" href="https://cntt.caothang.edu.vn/problem-04-finding-a-protein-motif/" title="[PROBLEM 04] FINDING A PROTEIN MOTIF">Chi tiết </i></a>
+                    </div>
+
+                    
+                </div>
+                <div class="item-thumbnail">
+                    <a href="" class="width-258" onmouseenter="Hien('item-date-6')" onmouseleave="An('item-date-6')">
+                        <span id="item-date-6" class="date">28/04/2022</span>
+                        <img class="img-content-bd" src="image/40295055_926764634174187_5641848834310127538_n-526x526.jpg" alt="" >
+                        
+
+                    </a>
+                    <h3 class="width-258">
+                        <a href="https://cntt.caothang.edu.vn/tuyen-dung-ngan-hang-tmcp-sai-gon/" title="[TUYỂN DỤNG] NGÂN HÀNG TMCP SÀI GÒN" class="main-color-1-hover">[TUYỂN DỤNG] NGÂN HÀNG TMCP SÀI GÒN</a>
+                    </h3>
+                    <p class="width-258">
+                        Địa điểm làm việc: Trụ sở 927 Trần Hưng đạo, P.1, Q.5, Tp.HCM. Tòa nhà Ngân Hàng TMCP Sài Gòn Thời gian làm việc:...													</p>
+                    <div class="width-258">
+                        <a class="btn-thumbnail" href="https://cntt.caothang.edu.vn/problem-04-finding-a-protein-motif/" title="[PROBLEM 04] FINDING A PROTEIN MOTIF">Chi tiết </i></a>
+                    </div>
+
+                    
+                </div>
+
+                <div class="item-thumbnail">
+                    <a href="" class="width-258" onmouseenter="Hien('item-date-7')" onmouseleave="An('item-date-7')">
+                        <span id="item-date-7" class="date">28/04/2022</span>
+                        <img class="img-content-bd" src="image/image006.png" alt="" >
+                        
+
+                    </a>
+                    <h3 class="width-258">
+                        <a href="https://cntt.caothang.edu.vn/tuyen-dung-cong-ty-co-phan-thuong-mai-dich-vu-sao-nam-an/" title="[TUYỂN DỤNG] CÔNG TY CỔ PHẦN THƯƠNG MẠI – DỊCH VỤ SAO NAM AN" class="main-color-1-hover">[TUYỂN DỤNG] CÔNG TY CỔ PHẦN THƯƠNG MẠI – DỊCH VỤ SAO NAM AN</a>
+                    </h3>
+                    <p class="width-258">
+                        Công ty Cổ phần Thương mại – Dịch vụ Sao Nam An (SOECO) có 100% vốn đầu tư của Nhật Bản – Công ty...													</p>
+                    <div class="width-258">
+                        <a class="btn-thumbnail" href="https://cntt.caothang.edu.vn/problem-04-finding-a-protein-motif/" title="[PROBLEM 04] FINDING A PROTEIN MOTIF">Chi tiết </i></a>
+                    </div>
+
+                    
+                </div>
+
+                <div class="item-thumbnail">
+                    <a href="" class="width-258" onmouseenter="Hien('item-date-8')" onmouseleave="An('item-date-8')">
+                        <span id="item-date-8" class="date">21/11/2019</span>
+                        <img class="img-content-bd" src="image/Gameloft_Poster-Tuyển-dụng-526x526.png" alt="" >
+                        
+
+                    </a>
+                    <h3 class="width-258">
+                        <a href="https://cntt.caothang.edu.vn/tuyen-dung-khoi-dau-su-nghiep-hoan-hao-tai-gameloft-cho-lap-trinh-vien/" title="[TUYỂN DỤNG] KHỞI ĐẦU SỰ NGHIỆP HOÀN HẢO TẠI GAMELOFT CHO LẬP TRÌNH VIÊN" class="main-color-1-hover">[TUYỂN DỤNG] KHỞI ĐẦU SỰ NGHIỆP HOÀN HẢO TẠI GAMELOFT CHO LẬP TRÌNH VIÊN</a>
+                    </h3>
+                    <p class="width-258">
+                        KHỞI ĐẦU SỰ NGHIỆP HOÀN HẢO TẠI GAMELOFT VỚI Lộ trình đào tạo bài bản dành cho các bạn sinh viên vừa mới tốt...													</p>
+                    <div class="width-258">
+                        <a class="btn-thumbnail" href="https://cntt.caothang.edu.vn/problem-04-finding-a-protein-motif/" title="[PROBLEM 04] FINDING A PROTEIN MOTIF">Chi tiết </i></a>
+                    </div>
+
+                    
+                </div>
+                
+
+            </div>
+            
+
+
+
+
+
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div id="bottom-1">
+            <div class="container-bot">
+                <div class="content">
+                    <div class="img-bot"> </div>
+                    
+                        
+                    
+                    <div class="content-bot"> 
+                        <h4 class="media-heading">Nghiên Cứu</h4>
+                        <p class="p-bot">Ứng dụng các công trình nghiên cứu khoa học vào cuộc sống</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container-bot">
+                <div class="content">
+                    <div class="img-bot"> </div>
+                    
+                        
+                    
+                    <div class="content-bot"> 
+                        <h4 class="media-heading">Cơ Hội</h4>
+                        <p class="p-bot">Mô hình đào tạo sát với thực tiễn mở rộng cơ hội việc làm cho sinh viên khi mới ra trường</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container-bot">
+                <div class="content">
+                    <div class="img-bot"> </div>
+                    
+
+                        
+                    
+                    <div class="content-bot"> 
+                        <h4 class="media-heading">Cam Kết</h4>
+                        <p class="p-bot">Chương trình đạo tạo chất lượng tiên tiến, theo chuẩn mô hình đào tạo quốc tế</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container-bot">
+                <div class="content">
+                    <div class="img-bot"> </div>
+                    
+
+                        
+                    
+                    <div class="content-bot"> 
+                        <h4 class="media-heading">Đổi Mới</h4>
+                        <p class="p-bot">Kiến thức chuyên ngành, phương pháp học tập và trang thiết bị không ngừng được cập nhật</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+           
+
+        </div>
+        <div id="bottom-2">
+            
+          
+            <div id="widget-inner">
+                
+                
+                
+                <a href="#" class="thamgia">THAM GIA ></a>
+                
+               
+                
+
+
+
+            </div>
+            
+            
+            
+
+
+        </div>
+
+        <div id="bottom-3">
+            <div class="container-bot">
+                <div class="content">                                                         
+                    <div class="content-bot"> 
+                        <h4>HỆ ĐÀO TẠO</h4>
+                        <div>
+                            <ul class="list-type">
+                                <li class="address-bot"><a class="address-bot" href="http://cntt.caothang.edu.vn/cao-dang-tin-hoc/">Cao Đẳng Tin Học</a></li>
+                                <li class="address-bot"><a class="address-bot" href="http://cntt.caothang.edu.vn/cao-dang-nghe-quan-tri-mang/">Cao Đẳng Nghề Quản Trị Mạng</a></li>
+                                <li class="address-bot"><a class="address-bot" href="http://cntt.caothang.edu.vn/cao-dang-nghe-sua-chua-lap-rap-may-tinh/">Cao Đẳng Nghề SCLRMT</a></li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container-bot">
+                <div class="content">                                                         
+                    <div class="content-bot"> 
+                        <h4>TIN TỨC</h4>
+                        <div>
+                            <ul class="list-type">
+                                <li class="address-bot"><a class="address-bot" href="http://cntt.caothang.edu.vn/thong-tin-chung/">Thông Tin Chung</a></li>
+                                <li class="address-bot"><a class="address-bot" href="http://cntt.caothang.edu.vn/thong-bao-he-cao-dang-chinh-qui/">Thông Báo Cao Đẳng Tin Học</a></li>
+                                <li class="address-bot"><a class="address-bot" href="http://cntt.caothang.edu.vn/thong-bao-he-cao-dang-nghe/">Thông Báo Cao Đẳng Nghề</a></li>
+                                <li class="address-bot"><a class="address-bot" href="http://cntt.caothang.edu.vn/thong-tin-tuyen-dung/">Thông Tin Tuyển Dụng</a></li>
+                                <li class="address-bot"><a class="address-bot" href="http://cntt.caothang.edu.vn/thanh-tich-sinh-vien/">Thành Tích Sinh Viên</a></li>
+                                <li class="address-bot"><a class="address-bot" href="http://cntt.caothang.edu.vn/tin-tuc-thoi-su-cntt/">Tin Tức Thời Sự CNTT</a></li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container-bot">
+                <div class="content">                                                         
+                    <div class="content-bot"> 
+                        <h4>LIÊN KẾT</h4>
+                        <div>
+                            <ul class="list-type">
+                               <li class="address-bot"><a class="address-bot" href="http://caothang.edu.vn/">Cao Đẳng Kỹ Thuật Cao Thắng</a></li>
+                               <li class="address-bot"><a class="address-bot" href="http://hcmus.edu.vn/">Đại Học Khoa Học Tự Nhiên</a></li>
+                               <li class="address-bot"><a class="address-bot" href="http://www.hcmut.edu.vn">Đại Học Bách Khoa</a></li>
+                               <li class="address-bot"><a class="address-bot" href="http://hcmute.edu.vn/">Đại Học Sư Phạm Kỹ Thuật</a></li>
+                               <li class="address-bot"><a class="address-bot" href="http://www.uit.edu.vn/">Đại Học Công Nghệ Thông Tin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container-bot">
+                <div class="content">                                                         
+                    <div class="content-bot"> 
+                        <h4>LIÊN HỆ</h4>
+                        <div>
+                            <ul style="padding: 0;">
+                               <li class="address-bot"><u>Email:</u> cntt@caothang.edu.vn</li>
+                               <li class="address-bot"><u>Điện Thoại:</u> 08.38212360 (ext-14)</li>
+                               <li class="address-bot"><u>Địa chỉ:</u> Lầu 7 (Dãy nhà F) </li>
+                               <li class="address-bot">65 Huỳnh Thúc Kháng, P.Bến Nghé, Q.1, Tp Hồ Chí Minh</li>
+                            
+                               
+                               
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+           
+
+        </div>
+        <div id="bottom-4">
+            <div style="text-align: center;">
+                <div id="widget-inner"></div>
+            </div>
+            <p style="margin-left: 25px; float: left;" >© 2020 Khoa CNTT - Trường Cao đẳng Kỹ thuật Cao Thắng.</p>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    
+    <script src="site.js"></script>
+</body>
+</html>
